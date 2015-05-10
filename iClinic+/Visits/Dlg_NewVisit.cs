@@ -12,22 +12,23 @@ namespace iClinic_.Visits
     public partial class Dlg_NewVisit : Form
     {
         private int pateintid = 0;
-
+        private bool edit = false;
+        private int visitid = 0;
         public Dlg_NewVisit(int pid)
         {
             InitializeComponent();
             pateintid = pid;
 
-            this.visitBindingSource.AddNew();
-            pidTextBox.Text = pateintid.ToString();
+            
         }
 
-        public Dlg_NewVisit(int pid,int visitid)
+        public Dlg_NewVisit(int pid,int _visitid)
         {
             InitializeComponent();
             pateintid = pid;
-
-            visitBindingSource.Filter = " id=" + visitid;
+            visitid = _visitid;
+            edit = true;
+           
         }
        
 
@@ -42,13 +43,29 @@ namespace iClinic_.Visits
         private void Dlg_NewVisit_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Visit' table. You can move, or remove it, as needed.
-            this.visitTableAdapter.Fill(this.clinic_DBDataSet.Visit);
+           // this.visitBindingSource.RemoveFilter();
+            if (edit)
+            {
+                
+                this.visitTableAdapter.Fill(this.clinic_DBDataSet.Visit);
+                this.visitBindingSource.Filter = " id="+visitid;
+                pidTextBox.Text = pateintid.ToString();
+            }
+            else
+            {
+                this.visitTableAdapter.Fill(this.clinic_DBDataSet.Visit);
+
+                this.visitBindingSource.AddNew();
+
+                pidTextBox.Text = pateintid.ToString();
+            }
            
 
         }
 
         private void btn_save_Click(object sender, EventArgs e)
         {
+           
             this.visitBindingSource.EndEdit();
             this.visitTableAdapter.Update(clinic_DBDataSet.Visit);
             this.Dispose();
