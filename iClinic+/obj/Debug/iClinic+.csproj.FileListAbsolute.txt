@@ -1,0 +1,1 @@
+C:\Github\clinic\iClinic+\bin\Debug\iClinic+.exe.config
