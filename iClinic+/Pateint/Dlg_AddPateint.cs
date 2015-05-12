@@ -33,6 +33,8 @@ namespace iClinic_.Pateint
             cb_gender.SelectedIndex = 0;
             pregnancyCheckBox.Checked = false;
             cb_gender.Refresh();
+
+            tb_drid.Text = Properties.Settings.Default.userid.ToString();
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Pateint' table. You can move, or remove it, as needed.
           //  this.pateintTableAdapter.Fill(this.clinic_DBDataSet.Pateint);
 

@@ -22,7 +22,7 @@ namespace iClinic_.Pateint
             this.gendermetaTableAdapter.Fill(this.clinic_DBDataSet.Gendermeta);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Pateint' table. You can move, or remove it, as needed.
             this.pateintTableAdapter.Fill(this.clinic_DBDataSet.Pateint);
-
+            
         }
 
         private void btn_addP_Click(object sender, EventArgs e)
@@ -47,6 +47,14 @@ namespace iClinic_.Pateint
         {
             this.pateintBindingSource.EndEdit();
             this.pateintTableAdapter.Update(clinic_DBDataSet.Pateint);
+        }
+
+        private void btn_AddVisit_Click(object sender, EventArgs e)
+        {
+            DataRowView drv = (DataRowView)pateintBindingSource.Current;
+            int pateintid = (int)drv["id"];
+            Visits.Dlg_NewVisit dlg = new Visits.Dlg_NewVisit(pateintid);
+            dlg.ShowDialog();
         }
     }
 }

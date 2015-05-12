@@ -31,5 +31,19 @@ namespace iClinic_
             pateint.WindowState = FormWindowState.Maximized;
             pateint.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.firstrun == 0)
+            {
+                FirstRun firstrun = new FirstRun();
+                firstrun.ShowDialog();
+            }
+            else
+            {
+                Login login = new Login();
+                login.ShowDialog();
+            }
+        }
     }
 }

@@ -18,6 +18,8 @@ namespace iClinic_.Visits
 
         private void Visit_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.VisitTypemeta' table. You can move, or remove it, as needed.
+            this.visitTypemetaTableAdapter.Fill(this.clinic_DBDataSet.VisitTypemeta);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Visit' table. You can move, or remove it, as needed.
            this.visitTableAdapter.Fill(this.clinic_DBDataSet.Visit);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Pateint' table. You can move, or remove it, as needed.

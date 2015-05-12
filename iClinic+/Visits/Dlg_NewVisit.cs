@@ -42,6 +42,8 @@ namespace iClinic_.Visits
 
         private void Dlg_NewVisit_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.VisitTypemeta' table. You can move, or remove it, as needed.
+            this.visitTypemetaTableAdapter.Fill(this.clinic_DBDataSet.VisitTypemeta);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Visit' table. You can move, or remove it, as needed.
            // this.visitBindingSource.RemoveFilter();
             if (edit)
@@ -56,7 +58,7 @@ namespace iClinic_.Visits
                 this.visitTableAdapter.Fill(this.clinic_DBDataSet.Visit);
 
                 this.visitBindingSource.AddNew();
-
+                cb_visitType.SelectedIndex = 0;
                 pidTextBox.Text = pateintid.ToString();
             }
            

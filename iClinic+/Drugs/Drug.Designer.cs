@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1087, 678);
             this.Name = "Drug";
-            this.Text = "Drug";
+            this.Text = "العلاج و الدواء";
             this.ResumeLayout(false);
 
         }

@@ -33,14 +33,18 @@
             System.Windows.Forms.Label dobLabel;
             System.Windows.Forms.Label genderLabel;
             System.Windows.Forms.Label noteLabel;
+            System.Windows.Forms.Label label1;
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
-            this.noteTextBox = new System.Windows.Forms.TextBox();
+            this.tb_drid = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cb_gender = new System.Windows.Forms.ComboBox();
             this.pateintBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clinic_DBDataSet = new iClinic_.clinic_DBDataSet();
+            this.gendermetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.noteTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.dobDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.gendermetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nCD_PCheckBox = new System.Windows.Forms.CheckBox();
             this.pregnancyCheckBox = new System.Windows.Forms.CheckBox();
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
@@ -49,18 +53,17 @@
             this.pateintTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.PateintTableAdapter();
             this.tableAdapterManager = new iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager();
             this.gendermetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.GendermetaTableAdapter();
-            this.cb_gender = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             nameLabel = new System.Windows.Forms.Label();
             dobLabel = new System.Windows.Forms.Label();
             genderLabel = new System.Windows.Forms.Label();
             noteLabel = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
             this.panelEx2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).BeginInit();
             this.panelEx3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -99,6 +102,15 @@
             noteLabel.TabIndex = 11;
             noteLabel.Text = "ملاحظات";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(271, 407);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(73, 17);
+            label1.TabIndex = 15;
+            label1.Text = "رقم الطبيب";
+            // 
             // panelEx1
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
@@ -121,6 +133,8 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.tb_drid);
+            this.panelEx2.Controls.Add(label1);
             this.panelEx2.Controls.Add(this.pictureBox1);
             this.panelEx2.Controls.Add(this.cb_gender);
             this.panelEx2.Controls.Add(noteLabel);
@@ -135,7 +149,7 @@
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx2.Location = new System.Drawing.Point(0, 53);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(381, 448);
+            this.panelEx2.Size = new System.Drawing.Size(381, 492);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -145,15 +159,43 @@
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 1;
             // 
-            // noteTextBox
+            // tb_drid
             // 
-            this.noteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "note", true));
-            this.noteTextBox.Location = new System.Drawing.Point(57, 248);
-            this.noteTextBox.Multiline = true;
-            this.noteTextBox.Name = "noteTextBox";
-            this.noteTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.noteTextBox.Size = new System.Drawing.Size(200, 140);
-            this.noteTextBox.TabIndex = 12;
+            this.tb_drid.BackColor = System.Drawing.SystemColors.ButtonFace;
+            // 
+            // 
+            // 
+            this.tb_drid.Border.Class = "TextBoxBorder";
+            this.tb_drid.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tb_drid.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "usid", true));
+            this.tb_drid.Location = new System.Drawing.Point(171, 402);
+            this.tb_drid.Name = "tb_drid";
+            this.tb_drid.ReadOnly = true;
+            this.tb_drid.Size = new System.Drawing.Size(84, 29);
+            this.tb_drid.TabIndex = 16;
+            this.tb_drid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::iClinic_.Properties.Resources.patient_ico;
+            this.pictureBox1.Location = new System.Drawing.Point(299, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 57);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cb_gender
+            // 
+            this.cb_gender.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "gender", true));
+            this.cb_gender.DataSource = this.gendermetaBindingSource;
+            this.cb_gender.DisplayMember = "name";
+            this.cb_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_gender.FormattingEnabled = true;
+            this.cb_gender.Location = new System.Drawing.Point(57, 140);
+            this.cb_gender.Name = "cb_gender";
+            this.cb_gender.Size = new System.Drawing.Size(200, 24);
+            this.cb_gender.TabIndex = 13;
+            this.cb_gender.ValueMember = "id";
             // 
             // pateintBindingSource
             // 
@@ -164,6 +206,21 @@
             // 
             this.clinic_DBDataSet.DataSetName = "clinic_DBDataSet";
             this.clinic_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gendermetaBindingSource
+            // 
+            this.gendermetaBindingSource.DataMember = "Gendermeta";
+            this.gendermetaBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // noteTextBox
+            // 
+            this.noteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "note", true));
+            this.noteTextBox.Location = new System.Drawing.Point(57, 248);
+            this.noteTextBox.Multiline = true;
+            this.noteTextBox.Name = "noteTextBox";
+            this.noteTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.noteTextBox.Size = new System.Drawing.Size(200, 140);
+            this.noteTextBox.TabIndex = 12;
             // 
             // nameTextBox
             // 
@@ -184,11 +241,6 @@
             this.dobDateTimePicker.RightToLeftLayout = true;
             this.dobDateTimePicker.Size = new System.Drawing.Size(200, 24);
             this.dobDateTimePicker.TabIndex = 5;
-            // 
-            // gendermetaBindingSource
-            // 
-            this.gendermetaBindingSource.DataMember = "Gendermeta";
-            this.gendermetaBindingSource.DataSource = this.clinic_DBDataSet;
             // 
             // nCD_PCheckBox
             // 
@@ -219,7 +271,7 @@
             this.panelEx3.Controls.Add(this.btn_exit);
             this.panelEx3.Controls.Add(this.btn_save);
             this.panelEx3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelEx3.Location = new System.Drawing.Point(0, 446);
+            this.panelEx3.Location = new System.Drawing.Point(0, 490);
             this.panelEx3.Name = "panelEx3";
             this.panelEx3.Size = new System.Drawing.Size(381, 55);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -235,6 +287,7 @@
             // 
             this.btn_exit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_exit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_exit.Location = new System.Drawing.Point(104, 16);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(75, 23);
@@ -271,53 +324,33 @@
             this.tableAdapterManager.UpdateOrder = iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.userTableAdapter = null;
             this.tableAdapterManager.VisitTableAdapter = null;
+            this.tableAdapterManager.VisitTypemetaTableAdapter = null;
             // 
             // gendermetaTableAdapter
             // 
             this.gendermetaTableAdapter.ClearBeforeFill = true;
             // 
-            // cb_gender
-            // 
-            this.cb_gender.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "gender", true));
-            this.cb_gender.DataSource = this.gendermetaBindingSource;
-            this.cb_gender.DisplayMember = "name";
-            this.cb_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_gender.FormattingEnabled = true;
-            this.cb_gender.Location = new System.Drawing.Point(57, 140);
-            this.cb_gender.Name = "cb_gender";
-            this.cb_gender.Size = new System.Drawing.Size(200, 24);
-            this.cb_gender.TabIndex = 13;
-            this.cb_gender.ValueMember = "id";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::iClinic_.Properties.Resources.patient_ico;
-            this.pictureBox1.Location = new System.Drawing.Point(299, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 57);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // Dlg_AddPateint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(381, 501);
+            this.CancelButton = this.btn_exit;
+            this.ClientSize = new System.Drawing.Size(381, 545);
             this.Controls.Add(this.panelEx3);
             this.Controls.Add(this.panelEx2);
             this.Controls.Add(this.panelEx1);
             this.DoubleBuffered = true;
             this.Name = "Dlg_AddPateint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dlg_AddPateint";
+            this.Text = "اضافة سجل مريض";
             this.Load += new System.EventHandler(this.Dlg_AddPateint_Load);
             this.panelEx2.ResumeLayout(false);
             this.panelEx2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).EndInit();
             this.panelEx3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -342,5 +375,6 @@
         private clinic_DBDataSetTableAdapters.GendermetaTableAdapter gendermetaTableAdapter;
         private System.Windows.Forms.ComboBox cb_gender;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private DevComponents.DotNetBar.Controls.TextBoxX tb_drid;
     }
 }

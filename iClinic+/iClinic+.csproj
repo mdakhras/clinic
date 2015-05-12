@@ -83,11 +83,23 @@
     <Compile Include="Drugs\Drug.Designer.cs">
       <DependentUpon>Drug.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirstRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstRun.Designer.cs">
+      <DependentUpon>FirstRun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Pateint\Dlg_AddPateint.cs">
       <SubType>Form</SubType>
@@ -118,8 +130,14 @@
     <EmbeddedResource Include="Drugs\Drug.resx">
       <DependentUpon>Drug.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FirstRun.resx">
+      <DependentUpon>FirstRun.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pateint\Dlg_AddPateint.resx">
       <DependentUpon>Dlg_AddPateint.cs</DependentUpon>
@@ -178,6 +196,14 @@
     <Content Include="clinic_DB.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\patient2.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\clinic3.png" />
+    <None Include="Resources\ahorro-energetico.png" />
+    <None Include="Resources\clinic21.png" />
+    <None Include="Resources\clinic2.png" />
+    <None Include="Resources\clinic0.png" />
+    <None Include="Resources\dokter2Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

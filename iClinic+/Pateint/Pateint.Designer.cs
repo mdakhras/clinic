@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label dobLabel;
             System.Windows.Forms.Label genderLabel;
@@ -63,6 +63,7 @@
             this.noteTextBox = new System.Windows.Forms.TextBox();
             this.btn_Save = new DevComponents.DotNetBar.ButtonX();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_AddVisit = new DevComponents.DotNetBar.ButtonX();
             nameLabel = new System.Windows.Forms.Label();
             dobLabel = new System.Windows.Forms.Label();
             genderLabel = new System.Windows.Forms.Label();
@@ -97,14 +98,15 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btn_AddVisit);
             this.panel1.Controls.Add(this.tb_pateintName);
             this.panel1.Controls.Add(this.btn_deleteP);
             this.panel1.Controls.Add(this.btn_addP);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(746, 0);
+            this.panel1.Location = new System.Drawing.Point(638, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(617, 65);
+            this.panel1.Size = new System.Drawing.Size(725, 65);
             this.panel1.TabIndex = 0;
             // 
             // tb_pateintName
@@ -116,7 +118,7 @@
             this.tb_pateintName.Border.Class = "TextBoxBorder";
             this.tb_pateintName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.tb_pateintName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "name", true));
-            this.tb_pateintName.Location = new System.Drawing.Point(246, 19);
+            this.tb_pateintName.Location = new System.Drawing.Point(351, 17);
             this.tb_pateintName.Name = "tb_pateintName";
             this.tb_pateintName.Size = new System.Drawing.Size(272, 29);
             this.tb_pateintName.TabIndex = 3;
@@ -125,7 +127,7 @@
             // 
             this.btn_deleteP.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_deleteP.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_deleteP.Location = new System.Drawing.Point(43, 22);
+            this.btn_deleteP.Location = new System.Drawing.Point(148, 20);
             this.btn_deleteP.Name = "btn_deleteP";
             this.btn_deleteP.Size = new System.Drawing.Size(75, 23);
             this.btn_deleteP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -137,7 +139,7 @@
             // 
             this.btn_addP.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_addP.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_addP.Location = new System.Drawing.Point(124, 22);
+            this.btn_addP.Location = new System.Drawing.Point(229, 20);
             this.btn_addP.Name = "btn_addP";
             this.btn_addP.Size = new System.Drawing.Size(116, 23);
             this.btn_addP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -148,7 +150,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(524, 25);
+            this.label1.Location = new System.Drawing.Point(629, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 17);
             this.label1.TabIndex = 0;
@@ -204,8 +206,8 @@
             // 
             this.dataGridViewX1.AllowUserToAddRows = false;
             this.dataGridViewX1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dataGridViewX1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dataGridViewX1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewX1.AutoGenerateColumns = false;
             this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -216,14 +218,14 @@
             this.nCDPDataGridViewCheckBoxColumn,
             this.pregnancyDataGridViewCheckBoxColumn});
             this.dataGridViewX1.DataSource = this.pateintBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(0, 0);
@@ -350,8 +352,11 @@
             // dobDateTimePicker
             // 
             this.dobDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.pateintBindingSource, "dob", true));
+            this.dobDateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dobDateTimePicker.Location = new System.Drawing.Point(60, 97);
             this.dobDateTimePicker.Name = "dobDateTimePicker";
+            this.dobDateTimePicker.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dobDateTimePicker.RightToLeftLayout = true;
             this.dobDateTimePicker.Size = new System.Drawing.Size(200, 24);
             this.dobDateTimePicker.TabIndex = 5;
             // 
@@ -421,12 +426,25 @@
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "gender", true));
             this.comboBox1.DataSource = this.gendermetaBindingSource;
             this.comboBox1.DisplayMember = "name";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(60, 127);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 24);
             this.comboBox1.TabIndex = 15;
             this.comboBox1.ValueMember = "id";
+            // 
+            // btn_AddVisit
+            // 
+            this.btn_AddVisit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_AddVisit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_AddVisit.Location = new System.Drawing.Point(67, 20);
+            this.btn_AddVisit.Name = "btn_AddVisit";
+            this.btn_AddVisit.Size = new System.Drawing.Size(75, 23);
+            this.btn_AddVisit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_AddVisit.TabIndex = 4;
+            this.btn_AddVisit.Text = "اضافة زيارة";
+            this.btn_AddVisit.Click += new System.EventHandler(this.btn_AddVisit_Click);
             // 
             // Pateint
             // 
@@ -438,7 +456,7 @@
             this.Controls.Add(this.panelEx1);
             this.DoubleBuffered = true;
             this.Name = "Pateint";
-            this.Text = "Pateint";
+            this.Text = "سجلات المرضى";
             this.Load += new System.EventHandler(this.Pateint_Load);
             this.panelEx1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -484,5 +502,6 @@
         private clinic_DBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private DevComponents.DotNetBar.ButtonX btn_Save;
         private System.Windows.Forms.ComboBox comboBox1;
+        private DevComponents.DotNetBar.ButtonX btn_AddVisit;
     }
 }
