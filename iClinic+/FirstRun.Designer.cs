@@ -57,7 +57,7 @@
             this.btn_next = new DevComponents.DotNetBar.ButtonX();
             this.btn_exit = new DevComponents.DotNetBar.ButtonX();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_confirmpwd = new System.Windows.Forms.TextBox();
             usnameLabel = new System.Windows.Forms.Label();
             fullnameLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
@@ -95,7 +95,7 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx2.Controls.Add(this.textBox1);
+            this.panelEx2.Controls.Add(this.tb_confirmpwd);
             this.panelEx2.Controls.Add(this.label1);
             this.panelEx2.Controls.Add(usnameLabel);
             this.panelEx2.Controls.Add(this.usnameTextBox);
@@ -350,6 +350,7 @@
             this.btn_next.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_next.TabIndex = 0;
             this.btn_next.Text = "التالي";
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // btn_exit
             // 
@@ -372,14 +373,14 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "تأكيد كلمة المرور";
             // 
-            // textBox1
+            // tb_confirmpwd
             // 
-            this.textBox1.Location = new System.Drawing.Point(46, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 24);
-            this.textBox1.TabIndex = 19;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.tb_confirmpwd.Location = new System.Drawing.Point(46, 108);
+            this.tb_confirmpwd.Name = "tb_confirmpwd";
+            this.tb_confirmpwd.Size = new System.Drawing.Size(196, 24);
+            this.tb_confirmpwd.TabIndex = 19;
+            this.tb_confirmpwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_confirmpwd.UseSystemPasswordChar = true;
             // 
             // FirstRun
             // 
@@ -391,6 +392,7 @@
             this.Controls.Add(this.panelEx1);
             this.DoubleBuffered = true;
             this.Name = "FirstRun";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FirstRun";
             this.Load += new System.EventHandler(this.FirstRun_Load);
             this.panelEx2.ResumeLayout(false);
@@ -422,7 +424,7 @@
         private System.Windows.Forms.TextBox globalidTextBox;
         private DevComponents.DotNetBar.ButtonX btn_exit;
         private DevComponents.DotNetBar.ButtonX btn_next;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_confirmpwd;
         private System.Windows.Forms.Label label1;
     }
 }
