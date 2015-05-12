@@ -59,7 +59,13 @@ namespace iClinic_
 
             if (flag)
             {
+                this.userBindingSource.EndEdit();
+                this.userTableAdapter.Update(clinic_DBDataSet.user);
+                FirstRun_Clinicinfo dlg = new FirstRun_Clinicinfo();
+                
                 this.Hide();
+                dlg.ShowDialog();
+
             }
             else
             {

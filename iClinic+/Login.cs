@@ -31,7 +31,7 @@ namespace iClinic_
                     Properties.Settings.Default.username = usDT[0]["fullname"].ToString();
                     
 
-                    Properties.Settings.Default.userid = int.Parse(usDT[0]["id"].ToString());
+                    Properties.Settings.Default.userid = usDT[0]["globalid"].ToString();
 
                     Properties.Settings.Default.Save();
 

@@ -50,7 +50,8 @@ namespace iClinic_
                 this.clinicInfoBindingSource.EndEdit();
                 this.clinicInfoTableAdapter.Update(clinic_DBDataSet.ClinicInfo);
                 this.Dispose();
-
+                Login login = new Login();
+                login.ShowDialog();
             }//end if
                 
         }

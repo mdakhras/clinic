@@ -48,9 +48,9 @@ namespace iClinic_.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int userid {
+        public string userid {
             get {
-                return ((int)(this["userid"]));
+                return ((string)(this["userid"]));
             }
             set {
                 this["userid"] = value;

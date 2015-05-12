@@ -37,10 +37,10 @@
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.tb_drid = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cb_gender = new System.Windows.Forms.ComboBox();
             this.pateintBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clinic_DBDataSet = new iClinic_.clinic_DBDataSet();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cb_gender = new System.Windows.Forms.ComboBox();
             this.gendermetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.noteTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
@@ -59,9 +59,9 @@
             noteLabel = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             this.panelEx2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).BeginInit();
             this.panelEx3.SuspendLayout();
             this.SuspendLayout();
@@ -168,12 +168,22 @@
             this.tb_drid.Border.Class = "TextBoxBorder";
             this.tb_drid.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.tb_drid.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "usid", true));
-            this.tb_drid.Location = new System.Drawing.Point(171, 402);
+            this.tb_drid.Location = new System.Drawing.Point(91, 402);
             this.tb_drid.Name = "tb_drid";
             this.tb_drid.ReadOnly = true;
-            this.tb_drid.Size = new System.Drawing.Size(84, 29);
+            this.tb_drid.Size = new System.Drawing.Size(164, 29);
             this.tb_drid.TabIndex = 16;
             this.tb_drid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pateintBindingSource
+            // 
+            this.pateintBindingSource.DataMember = "Pateint";
+            this.pateintBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // clinic_DBDataSet
+            // 
+            this.clinic_DBDataSet.DataSetName = "clinic_DBDataSet";
+            this.clinic_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // pictureBox1
             // 
@@ -196,16 +206,6 @@
             this.cb_gender.Size = new System.Drawing.Size(200, 24);
             this.cb_gender.TabIndex = 13;
             this.cb_gender.ValueMember = "id";
-            // 
-            // pateintBindingSource
-            // 
-            this.pateintBindingSource.DataMember = "Pateint";
-            this.pateintBindingSource.DataSource = this.clinic_DBDataSet;
-            // 
-            // clinic_DBDataSet
-            // 
-            this.clinic_DBDataSet.DataSetName = "clinic_DBDataSet";
-            this.clinic_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gendermetaBindingSource
             // 
@@ -346,9 +346,9 @@
             this.Load += new System.EventHandler(this.Dlg_AddPateint_Load);
             this.panelEx2.ResumeLayout(false);
             this.panelEx2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).EndInit();
             this.panelEx3.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -13,7 +13,7 @@
     <Setting Name="username" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="userid" Type="System.Int32" Scope="User">
+    <Setting Name="userid" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="firstrun" Type="System.Int32" Scope="User">
