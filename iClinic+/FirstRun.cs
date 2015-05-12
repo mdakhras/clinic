@@ -55,11 +55,15 @@ namespace iClinic_
             {
                 flag = false;
             }
-             
 
-            if (flag )
+
+            if (flag)
             {
-
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("(*)يرجى تعبئة الحقول المطلوبة");
             }
         }
     }

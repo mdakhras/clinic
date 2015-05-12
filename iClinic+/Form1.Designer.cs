@@ -62,12 +62,12 @@
             this.ribbonBar4 = new DevComponents.DotNetBar.RibbonBar();
             this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
             this.ribbonBar6 = new DevComponents.DotNetBar.RibbonBar();
-            this.btn_visits = new DevComponents.DotNetBar.ButtonItem();
-            this.btn_pateint = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem17 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem16 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem14 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem15 = new DevComponents.DotNetBar.ButtonItem();
+            this.btn_visits = new DevComponents.DotNetBar.ButtonItem();
+            this.btn_pateint = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
@@ -81,8 +81,8 @@
             this.ribbonControl1.BackgroundStyle.Class = "";
             this.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonControl1.CaptionVisible = true;
-            this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
+            this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.office2007StartButton1,
@@ -145,6 +145,7 @@
             this.ribbonPanel2.StyleMouseOver.Class = "";
             this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel2.TabIndex = 2;
+            this.ribbonPanel2.Visible = false;
             // 
             // ribbonPanel1
             // 
@@ -172,7 +173,6 @@
             this.ribbonPanel1.StyleMouseOver.Class = "";
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
-            this.ribbonPanel1.Visible = false;
             // 
             // ribbonBar2
             // 
@@ -427,13 +427,13 @@
             // 
             // ribbonTabItem1
             // 
+            this.ribbonTabItem1.Checked = true;
             this.ribbonTabItem1.Name = "ribbonTabItem1";
             this.ribbonTabItem1.Panel = this.ribbonPanel1;
             this.ribbonTabItem1.Text = "المريض";
             // 
             // ribbonTabItem2
             // 
-            this.ribbonTabItem2.Checked = true;
             this.ribbonTabItem2.Name = "ribbonTabItem2";
             this.ribbonTabItem2.Panel = this.ribbonPanel2;
             this.ribbonTabItem2.Text = "بيانات العيادة";
@@ -587,22 +587,6 @@
             this.ribbonBar6.TitleStyleMouseOver.Class = "";
             this.ribbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
-            // btn_visits
-            // 
-            this.btn_visits.Image = global::iClinic_.Properties.Resources.visits_ico;
-            this.btn_visits.Name = "btn_visits";
-            this.btn_visits.SubItemsExpandWidth = 14;
-            this.btn_visits.Text = "buttonItem15";
-            this.btn_visits.Click += new System.EventHandler(this.btn_visits_Click);
-            // 
-            // btn_pateint
-            // 
-            this.btn_pateint.Image = global::iClinic_.Properties.Resources.patient2;
-            this.btn_pateint.Name = "btn_pateint";
-            this.btn_pateint.SubItemsExpandWidth = 14;
-            this.btn_pateint.Text = "buttonItem14";
-            this.btn_pateint.Click += new System.EventHandler(this.btn_pateint_Click);
-            // 
             // buttonItem17
             // 
             this.buttonItem17.Image = global::iClinic_.Properties.Resources.calendar;
@@ -630,6 +614,22 @@
             this.buttonItem15.Name = "buttonItem15";
             this.buttonItem15.SubItemsExpandWidth = 14;
             this.buttonItem15.Text = "buttonItem15";
+            // 
+            // btn_visits
+            // 
+            this.btn_visits.Image = global::iClinic_.Properties.Resources.visits_ico;
+            this.btn_visits.Name = "btn_visits";
+            this.btn_visits.SubItemsExpandWidth = 14;
+            this.btn_visits.Text = "buttonItem15";
+            this.btn_visits.Click += new System.EventHandler(this.btn_visits_Click);
+            // 
+            // btn_pateint
+            // 
+            this.btn_pateint.Image = global::iClinic_.Properties.Resources.patient2;
+            this.btn_pateint.Name = "btn_pateint";
+            this.btn_pateint.SubItemsExpandWidth = 14;
+            this.btn_pateint.Text = "buttonItem14";
+            this.btn_pateint.Click += new System.EventHandler(this.btn_pateint_Click);
             // 
             // Form1
             // 

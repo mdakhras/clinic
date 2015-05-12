@@ -178,11 +178,11 @@
             // usnameLabel
             // 
             usnameLabel.AutoSize = true;
-            usnameLabel.Location = new System.Drawing.Point(259, 20);
+            usnameLabel.Location = new System.Drawing.Point(251, 20);
             usnameLabel.Name = "usnameLabel";
-            usnameLabel.Size = new System.Drawing.Size(101, 17);
+            usnameLabel.Size = new System.Drawing.Size(119, 17);
             usnameLabel.TabIndex = 0;
-            usnameLabel.Text = "اسم المستخدم";
+            usnameLabel.Text = "(*)اسم المستخدم";
             // 
             // usnameTextBox
             // 
@@ -196,11 +196,11 @@
             // fullnameLabel
             // 
             fullnameLabel.AutoSize = true;
-            fullnameLabel.Location = new System.Drawing.Point(281, 50);
+            fullnameLabel.Location = new System.Drawing.Point(273, 50);
             fullnameLabel.Name = "fullnameLabel";
-            fullnameLabel.Size = new System.Drawing.Size(79, 17);
+            fullnameLabel.Size = new System.Drawing.Size(97, 17);
             fullnameLabel.TabIndex = 2;
-            fullnameLabel.Text = "اسم الطبيب";
+            fullnameLabel.Text = "(*)اسم الطبيب";
             // 
             // fullnameTextBox
             // 
@@ -214,11 +214,11 @@
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(286, 80);
+            passwordLabel.Location = new System.Drawing.Point(278, 80);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(74, 17);
+            passwordLabel.Size = new System.Drawing.Size(92, 17);
             passwordLabel.TabIndex = 4;
-            passwordLabel.Text = "كلمة المرور";
+            passwordLabel.Text = "(*)كلمة المرور";
             // 
             // passwordTextBox
             // 
@@ -233,7 +233,7 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(260, 142);
+            emailLabel.Location = new System.Drawing.Point(270, 142);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(100, 17);
             emailLabel.TabIndex = 6;
@@ -251,7 +251,7 @@
             // mobileLabel
             // 
             mobileLabel.AutoSize = true;
-            mobileLabel.Location = new System.Drawing.Point(302, 172);
+            mobileLabel.Location = new System.Drawing.Point(312, 172);
             mobileLabel.Name = "mobileLabel";
             mobileLabel.Size = new System.Drawing.Size(58, 17);
             mobileLabel.TabIndex = 8;
@@ -269,11 +269,11 @@
             // licenceidLabel
             // 
             licenceidLabel.AutoSize = true;
-            licenceidLabel.Location = new System.Drawing.Point(286, 202);
+            licenceidLabel.Location = new System.Drawing.Point(278, 202);
             licenceidLabel.Name = "licenceidLabel";
-            licenceidLabel.Size = new System.Drawing.Size(74, 17);
+            licenceidLabel.Size = new System.Drawing.Size(92, 17);
             licenceidLabel.TabIndex = 10;
-            licenceidLabel.Text = "رقم الرخصة";
+            licenceidLabel.Text = "(*)رقم الرخصة";
             // 
             // licenceidTextBox
             // 
@@ -288,7 +288,7 @@
             // degreeLabel
             // 
             degreeLabel.AutoSize = true;
-            degreeLabel.Location = new System.Drawing.Point(270, 232);
+            degreeLabel.Location = new System.Drawing.Point(280, 232);
             degreeLabel.Name = "degreeLabel";
             degreeLabel.Size = new System.Drawing.Size(90, 17);
             degreeLabel.TabIndex = 12;
@@ -306,7 +306,7 @@
             // universityLabel
             // 
             universityLabel.AutoSize = true;
-            universityLabel.Location = new System.Drawing.Point(309, 262);
+            universityLabel.Location = new System.Drawing.Point(319, 262);
             universityLabel.Name = "universityLabel";
             universityLabel.Size = new System.Drawing.Size(51, 17);
             universityLabel.TabIndex = 14;
@@ -324,7 +324,7 @@
             // globalidLabel
             // 
             globalidLabel.AutoSize = true;
-            globalidLabel.Location = new System.Drawing.Point(272, 292);
+            globalidLabel.Location = new System.Drawing.Point(282, 292);
             globalidLabel.Name = "globalidLabel";
             globalidLabel.Size = new System.Drawing.Size(88, 17);
             globalidLabel.TabIndex = 16;
@@ -367,11 +367,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(254, 111);
+            this.label1.Location = new System.Drawing.Point(246, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 17);
+            this.label1.Size = new System.Drawing.Size(124, 17);
             this.label1.TabIndex = 18;
-            this.label1.Text = "تأكيد كلمة المرور";
+            this.label1.Text = "(*)تأكيد كلمة المرور";
             // 
             // tb_confirmpwd
             // 
