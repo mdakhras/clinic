@@ -43,5 +43,24 @@ namespace iClinic_
         {
             Application.Exit();
         }
+
+        private void btn_next_Click(object sender, EventArgs e)
+        {
+            bool flag =true;
+            if(!passwordTextBox.Text.Equals(tb_confirmpwd.Text) )
+            {
+                flag = false;
+            }
+            if (string.IsNullOrEmpty(fullnameTextBox.Text) || string.IsNullOrEmpty(mobileTextBox.Text) || string.IsNullOrEmpty(licenceidTextBox.Text))
+            {
+                flag = false;
+            }
+             
+
+            if (flag )
+            {
+
+            }
+        }
     }
 }
