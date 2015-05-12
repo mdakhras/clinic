@@ -48,16 +48,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Design">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.DotNetBar.Design.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.DotNetBar.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation.Design">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.Design.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.Instrumentation.Design.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -88,6 +88,12 @@
     </Compile>
     <Compile Include="FirstRun.Designer.cs">
       <DependentUpon>FirstRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstRun_Clinicinfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstRun_Clinicinfo.Designer.cs">
+      <DependentUpon>FirstRun_Clinicinfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FirstRun.resx">
       <DependentUpon>FirstRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstRun_Clinicinfo.resx">
+      <DependentUpon>FirstRun_Clinicinfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
