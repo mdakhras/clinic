@@ -40,12 +40,11 @@
             System.Windows.Forms.Label globalidLabel;
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
-            this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
-            this.clinic_DBDataSet = new iClinic_.clinic_DBDataSet();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.userTableAdapter();
-            this.tableAdapterManager = new iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager();
+            this.tb_confirmpwd = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.usnameTextBox = new System.Windows.Forms.TextBox();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clinic_DBDataSet = new iClinic_.clinic_DBDataSet();
             this.fullnameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
@@ -54,10 +53,11 @@
             this.degreeTextBox = new System.Windows.Forms.TextBox();
             this.universityTextBox = new System.Windows.Forms.TextBox();
             this.globalidTextBox = new System.Windows.Forms.TextBox();
-            this.btn_next = new DevComponents.DotNetBar.ButtonX();
+            this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.btn_exit = new DevComponents.DotNetBar.ButtonX();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_confirmpwd = new System.Windows.Forms.TextBox();
+            this.btn_next = new DevComponents.DotNetBar.ButtonX();
+            this.userTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.userTableAdapter();
+            this.tableAdapterManager = new iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager();
             usnameLabel = new System.Windows.Forms.Label();
             fullnameLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
@@ -68,10 +68,91 @@
             universityLabel = new System.Windows.Forms.Label();
             globalidLabel = new System.Windows.Forms.Label();
             this.panelEx2.SuspendLayout();
-            this.panelEx3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).BeginInit();
+            this.panelEx3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // usnameLabel
+            // 
+            usnameLabel.AutoSize = true;
+            usnameLabel.Location = new System.Drawing.Point(251, 20);
+            usnameLabel.Name = "usnameLabel";
+            usnameLabel.Size = new System.Drawing.Size(119, 17);
+            usnameLabel.TabIndex = 0;
+            usnameLabel.Text = "(*)اسم المستخدم";
+            // 
+            // fullnameLabel
+            // 
+            fullnameLabel.AutoSize = true;
+            fullnameLabel.Location = new System.Drawing.Point(273, 50);
+            fullnameLabel.Name = "fullnameLabel";
+            fullnameLabel.Size = new System.Drawing.Size(97, 17);
+            fullnameLabel.TabIndex = 2;
+            fullnameLabel.Text = "(*)اسم الطبيب";
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new System.Drawing.Point(278, 80);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(92, 17);
+            passwordLabel.TabIndex = 4;
+            passwordLabel.Text = "(*)كلمة المرور";
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new System.Drawing.Point(270, 142);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(100, 17);
+            emailLabel.TabIndex = 6;
+            emailLabel.Text = "البريد الالكتروني";
+            // 
+            // mobileLabel
+            // 
+            mobileLabel.AutoSize = true;
+            mobileLabel.Location = new System.Drawing.Point(312, 172);
+            mobileLabel.Name = "mobileLabel";
+            mobileLabel.Size = new System.Drawing.Size(58, 17);
+            mobileLabel.TabIndex = 8;
+            mobileLabel.Text = "المحمول";
+            // 
+            // licenceidLabel
+            // 
+            licenceidLabel.AutoSize = true;
+            licenceidLabel.Location = new System.Drawing.Point(278, 202);
+            licenceidLabel.Name = "licenceidLabel";
+            licenceidLabel.Size = new System.Drawing.Size(92, 17);
+            licenceidLabel.TabIndex = 10;
+            licenceidLabel.Text = "(*)رقم الرخصة";
+            // 
+            // degreeLabel
+            // 
+            degreeLabel.AutoSize = true;
+            degreeLabel.Location = new System.Drawing.Point(280, 232);
+            degreeLabel.Name = "degreeLabel";
+            degreeLabel.Size = new System.Drawing.Size(90, 17);
+            degreeLabel.TabIndex = 12;
+            degreeLabel.Text = "الدرجة العلمية";
+            // 
+            // universityLabel
+            // 
+            universityLabel.AutoSize = true;
+            universityLabel.Location = new System.Drawing.Point(319, 262);
+            universityLabel.Name = "universityLabel";
+            universityLabel.Size = new System.Drawing.Size(51, 17);
+            universityLabel.TabIndex = 14;
+            universityLabel.Text = "الجامعة";
+            // 
+            // globalidLabel
+            // 
+            globalidLabel.AutoSize = true;
+            globalidLabel.Location = new System.Drawing.Point(282, 292);
+            globalidLabel.Name = "globalidLabel";
+            globalidLabel.Size = new System.Drawing.Size(88, 17);
+            globalidLabel.TabIndex = 16;
+            globalidLabel.Text = "الرقم المركزي";
             // 
             // panelEx1
             // 
@@ -128,6 +209,118 @@
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 1;
             // 
+            // tb_confirmpwd
+            // 
+            this.tb_confirmpwd.Location = new System.Drawing.Point(46, 108);
+            this.tb_confirmpwd.Name = "tb_confirmpwd";
+            this.tb_confirmpwd.Size = new System.Drawing.Size(196, 24);
+            this.tb_confirmpwd.TabIndex = 19;
+            this.tb_confirmpwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_confirmpwd.UseSystemPasswordChar = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(246, 111);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 17);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "(*)تأكيد كلمة المرور";
+            // 
+            // usnameTextBox
+            // 
+            this.usnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "usname", true));
+            this.usnameTextBox.Location = new System.Drawing.Point(46, 17);
+            this.usnameTextBox.Name = "usnameTextBox";
+            this.usnameTextBox.Size = new System.Drawing.Size(196, 24);
+            this.usnameTextBox.TabIndex = 1;
+            this.usnameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataMember = "user";
+            this.userBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // clinic_DBDataSet
+            // 
+            this.clinic_DBDataSet.DataSetName = "clinic_DBDataSet";
+            this.clinic_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // fullnameTextBox
+            // 
+            this.fullnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "fullname", true));
+            this.fullnameTextBox.Location = new System.Drawing.Point(46, 47);
+            this.fullnameTextBox.Name = "fullnameTextBox";
+            this.fullnameTextBox.Size = new System.Drawing.Size(196, 24);
+            this.fullnameTextBox.TabIndex = 3;
+            this.fullnameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "password", true));
+            this.passwordTextBox.Location = new System.Drawing.Point(46, 77);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(196, 24);
+            this.passwordTextBox.TabIndex = 5;
+            this.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.passwordTextBox.UseSystemPasswordChar = true;
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "email", true));
+            this.emailTextBox.Location = new System.Drawing.Point(45, 139);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(196, 24);
+            this.emailTextBox.TabIndex = 7;
+            this.emailTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // mobileTextBox
+            // 
+            this.mobileTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "mobile", true));
+            this.mobileTextBox.Location = new System.Drawing.Point(45, 169);
+            this.mobileTextBox.Name = "mobileTextBox";
+            this.mobileTextBox.Size = new System.Drawing.Size(196, 24);
+            this.mobileTextBox.TabIndex = 9;
+            this.mobileTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // licenceidTextBox
+            // 
+            this.licenceidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "licenceid", true));
+            this.licenceidTextBox.Location = new System.Drawing.Point(45, 199);
+            this.licenceidTextBox.Name = "licenceidTextBox";
+            this.licenceidTextBox.Size = new System.Drawing.Size(196, 24);
+            this.licenceidTextBox.TabIndex = 11;
+            this.licenceidTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.licenceidTextBox.TextChanged += new System.EventHandler(this.licenceidTextBox_TextChanged);
+            // 
+            // degreeTextBox
+            // 
+            this.degreeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "degree", true));
+            this.degreeTextBox.Location = new System.Drawing.Point(45, 229);
+            this.degreeTextBox.Name = "degreeTextBox";
+            this.degreeTextBox.Size = new System.Drawing.Size(196, 24);
+            this.degreeTextBox.TabIndex = 13;
+            this.degreeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // universityTextBox
+            // 
+            this.universityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "university", true));
+            this.universityTextBox.Location = new System.Drawing.Point(45, 259);
+            this.universityTextBox.Name = "universityTextBox";
+            this.universityTextBox.Size = new System.Drawing.Size(196, 24);
+            this.universityTextBox.TabIndex = 15;
+            this.universityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // globalidTextBox
+            // 
+            this.globalidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "globalid", true));
+            this.globalidTextBox.Location = new System.Drawing.Point(108, 289);
+            this.globalidTextBox.Name = "globalidTextBox";
+            this.globalidTextBox.ReadOnly = true;
+            this.globalidTextBox.Size = new System.Drawing.Size(133, 24);
+            this.globalidTextBox.TabIndex = 17;
+            this.globalidTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // panelEx3
             // 
             this.panelEx3.CanvasColor = System.Drawing.SystemColors.Control;
@@ -147,15 +340,29 @@
             this.panelEx3.Style.GradientAngle = 90;
             this.panelEx3.TabIndex = 2;
             // 
-            // clinic_DBDataSet
+            // btn_exit
             // 
-            this.clinic_DBDataSet.DataSetName = "clinic_DBDataSet";
-            this.clinic_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.btn_exit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_exit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_exit.Location = new System.Drawing.Point(121, 16);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_exit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_exit.TabIndex = 1;
+            this.btn_exit.Text = "خروج";
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // userBindingSource
+            // btn_next
             // 
-            this.userBindingSource.DataMember = "user";
-            this.userBindingSource.DataSource = this.clinic_DBDataSet;
+            this.btn_next.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_next.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_next.Location = new System.Drawing.Point(202, 16);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.Size = new System.Drawing.Size(75, 23);
+            this.btn_next.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_next.TabIndex = 0;
+            this.btn_next.Text = "التالي";
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // userTableAdapter
             // 
@@ -175,218 +382,12 @@
             this.tableAdapterManager.VisitTableAdapter = null;
             this.tableAdapterManager.VisitTypemetaTableAdapter = null;
             // 
-            // usnameLabel
-            // 
-            usnameLabel.AutoSize = true;
-            usnameLabel.Location = new System.Drawing.Point(251, 20);
-            usnameLabel.Name = "usnameLabel";
-            usnameLabel.Size = new System.Drawing.Size(119, 17);
-            usnameLabel.TabIndex = 0;
-            usnameLabel.Text = "(*)اسم المستخدم";
-            // 
-            // usnameTextBox
-            // 
-            this.usnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "usname", true));
-            this.usnameTextBox.Location = new System.Drawing.Point(46, 17);
-            this.usnameTextBox.Name = "usnameTextBox";
-            this.usnameTextBox.Size = new System.Drawing.Size(196, 24);
-            this.usnameTextBox.TabIndex = 1;
-            this.usnameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // fullnameLabel
-            // 
-            fullnameLabel.AutoSize = true;
-            fullnameLabel.Location = new System.Drawing.Point(273, 50);
-            fullnameLabel.Name = "fullnameLabel";
-            fullnameLabel.Size = new System.Drawing.Size(97, 17);
-            fullnameLabel.TabIndex = 2;
-            fullnameLabel.Text = "(*)اسم الطبيب";
-            // 
-            // fullnameTextBox
-            // 
-            this.fullnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "fullname", true));
-            this.fullnameTextBox.Location = new System.Drawing.Point(46, 47);
-            this.fullnameTextBox.Name = "fullnameTextBox";
-            this.fullnameTextBox.Size = new System.Drawing.Size(196, 24);
-            this.fullnameTextBox.TabIndex = 3;
-            this.fullnameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(278, 80);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(92, 17);
-            passwordLabel.TabIndex = 4;
-            passwordLabel.Text = "(*)كلمة المرور";
-            // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(46, 77);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(196, 24);
-            this.passwordTextBox.TabIndex = 5;
-            this.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.passwordTextBox.UseSystemPasswordChar = true;
-            // 
-            // emailLabel
-            // 
-            emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(270, 142);
-            emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(100, 17);
-            emailLabel.TabIndex = 6;
-            emailLabel.Text = "البريد الالكتروني";
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(45, 139);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(196, 24);
-            this.emailTextBox.TabIndex = 7;
-            this.emailTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // mobileLabel
-            // 
-            mobileLabel.AutoSize = true;
-            mobileLabel.Location = new System.Drawing.Point(312, 172);
-            mobileLabel.Name = "mobileLabel";
-            mobileLabel.Size = new System.Drawing.Size(58, 17);
-            mobileLabel.TabIndex = 8;
-            mobileLabel.Text = "المحمول";
-            // 
-            // mobileTextBox
-            // 
-            this.mobileTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "mobile", true));
-            this.mobileTextBox.Location = new System.Drawing.Point(45, 169);
-            this.mobileTextBox.Name = "mobileTextBox";
-            this.mobileTextBox.Size = new System.Drawing.Size(196, 24);
-            this.mobileTextBox.TabIndex = 9;
-            this.mobileTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // licenceidLabel
-            // 
-            licenceidLabel.AutoSize = true;
-            licenceidLabel.Location = new System.Drawing.Point(278, 202);
-            licenceidLabel.Name = "licenceidLabel";
-            licenceidLabel.Size = new System.Drawing.Size(92, 17);
-            licenceidLabel.TabIndex = 10;
-            licenceidLabel.Text = "(*)رقم الرخصة";
-            // 
-            // licenceidTextBox
-            // 
-            this.licenceidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "licenceid", true));
-            this.licenceidTextBox.Location = new System.Drawing.Point(45, 199);
-            this.licenceidTextBox.Name = "licenceidTextBox";
-            this.licenceidTextBox.Size = new System.Drawing.Size(196, 24);
-            this.licenceidTextBox.TabIndex = 11;
-            this.licenceidTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.licenceidTextBox.TextChanged += new System.EventHandler(this.licenceidTextBox_TextChanged);
-            // 
-            // degreeLabel
-            // 
-            degreeLabel.AutoSize = true;
-            degreeLabel.Location = new System.Drawing.Point(280, 232);
-            degreeLabel.Name = "degreeLabel";
-            degreeLabel.Size = new System.Drawing.Size(90, 17);
-            degreeLabel.TabIndex = 12;
-            degreeLabel.Text = "الدرجة العلمية";
-            // 
-            // degreeTextBox
-            // 
-            this.degreeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "degree", true));
-            this.degreeTextBox.Location = new System.Drawing.Point(45, 229);
-            this.degreeTextBox.Name = "degreeTextBox";
-            this.degreeTextBox.Size = new System.Drawing.Size(196, 24);
-            this.degreeTextBox.TabIndex = 13;
-            this.degreeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // universityLabel
-            // 
-            universityLabel.AutoSize = true;
-            universityLabel.Location = new System.Drawing.Point(319, 262);
-            universityLabel.Name = "universityLabel";
-            universityLabel.Size = new System.Drawing.Size(51, 17);
-            universityLabel.TabIndex = 14;
-            universityLabel.Text = "الجامعة";
-            // 
-            // universityTextBox
-            // 
-            this.universityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "university", true));
-            this.universityTextBox.Location = new System.Drawing.Point(45, 259);
-            this.universityTextBox.Name = "universityTextBox";
-            this.universityTextBox.Size = new System.Drawing.Size(196, 24);
-            this.universityTextBox.TabIndex = 15;
-            this.universityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // globalidLabel
-            // 
-            globalidLabel.AutoSize = true;
-            globalidLabel.Location = new System.Drawing.Point(282, 292);
-            globalidLabel.Name = "globalidLabel";
-            globalidLabel.Size = new System.Drawing.Size(88, 17);
-            globalidLabel.TabIndex = 16;
-            globalidLabel.Text = "الرقم المركزي";
-            // 
-            // globalidTextBox
-            // 
-            this.globalidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "globalid", true));
-            this.globalidTextBox.Location = new System.Drawing.Point(108, 289);
-            this.globalidTextBox.Name = "globalidTextBox";
-            this.globalidTextBox.ReadOnly = true;
-            this.globalidTextBox.Size = new System.Drawing.Size(133, 24);
-            this.globalidTextBox.TabIndex = 17;
-            this.globalidTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btn_next
-            // 
-            this.btn_next.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_next.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_next.Location = new System.Drawing.Point(202, 16);
-            this.btn_next.Name = "btn_next";
-            this.btn_next.Size = new System.Drawing.Size(75, 23);
-            this.btn_next.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_next.TabIndex = 0;
-            this.btn_next.Text = "التالي";
-            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btn_exit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_exit.Location = new System.Drawing.Point(121, 16);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(75, 23);
-            this.btn_exit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btn_exit.TabIndex = 1;
-            this.btn_exit.Text = "خروج";
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(246, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 17);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "(*)تأكيد كلمة المرور";
-            // 
-            // tb_confirmpwd
-            // 
-            this.tb_confirmpwd.Location = new System.Drawing.Point(46, 108);
-            this.tb_confirmpwd.Name = "tb_confirmpwd";
-            this.tb_confirmpwd.Size = new System.Drawing.Size(196, 24);
-            this.tb_confirmpwd.TabIndex = 19;
-            this.tb_confirmpwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_confirmpwd.UseSystemPasswordChar = true;
-            // 
             // FirstRun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 441);
+            this.ControlBox = false;
             this.Controls.Add(this.panelEx3);
             this.Controls.Add(this.panelEx2);
             this.Controls.Add(this.panelEx1);
@@ -397,9 +398,9 @@
             this.Load += new System.EventHandler(this.FirstRun_Load);
             this.panelEx2.ResumeLayout(false);
             this.panelEx2.PerformLayout();
-            this.panelEx3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).EndInit();
+            this.panelEx3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
