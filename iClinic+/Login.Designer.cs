@@ -154,7 +154,7 @@
             this.DoubleBuffered = true;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "تسجيل الدخول";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panelEx1.ResumeLayout(false);
             this.ResumeLayout(false);
