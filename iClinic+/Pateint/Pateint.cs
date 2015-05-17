@@ -18,6 +18,8 @@ namespace iClinic_.Pateint
 
         private void Pateint_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.MritalStatusmeta' table. You can move, or remove it, as needed.
+            this.mritalStatusmetaTableAdapter.Fill(this.clinic_DBDataSet.MritalStatusmeta);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Gendermeta' table. You can move, or remove it, as needed.
             this.gendermetaTableAdapter.Fill(this.clinic_DBDataSet.Gendermeta);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Pateint' table. You can move, or remove it, as needed.

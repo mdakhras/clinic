@@ -34,11 +34,20 @@
             System.Windows.Forms.Label genderLabel;
             System.Windows.Forms.Label noteLabel;
             System.Windows.Forms.Label label1;
+            System.Windows.Forms.Label label2;
+            System.Windows.Forms.Label label3;
+            System.Windows.Forms.Label label4;
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
-            this.tb_drid = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.pateintBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clinic_DBDataSet = new iClinic_.clinic_DBDataSet();
+            this.metaJobBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.metaBloodTypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.mritalStatusmetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tb_drid = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cb_gender = new System.Windows.Forms.ComboBox();
             this.gendermetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -53,14 +62,25 @@
             this.pateintTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.PateintTableAdapter();
             this.tableAdapterManager = new iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager();
             this.gendermetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.GendermetaTableAdapter();
+            this.mritalStatusmetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.MritalStatusmetaTableAdapter();
+            this.bloodTypemetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.BloodTypemetaTableAdapter();
+            this.metaJobTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.metaJobTableAdapter();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_age = new System.Windows.Forms.TextBox();
             nameLabel = new System.Windows.Forms.Label();
             dobLabel = new System.Windows.Forms.Label();
             genderLabel = new System.Windows.Forms.Label();
             noteLabel = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
             this.panelEx2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metaJobBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metaBloodTypesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mritalStatusmetaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).BeginInit();
             this.panelEx3.SuspendLayout();
@@ -69,7 +89,7 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(271, 83);
+            nameLabel.Location = new System.Drawing.Point(288, 83);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(81, 17);
             nameLabel.TabIndex = 2;
@@ -78,7 +98,7 @@
             // dobLabel
             // 
             dobLabel.AutoSize = true;
-            dobLabel.Location = new System.Drawing.Point(275, 116);
+            dobLabel.Location = new System.Drawing.Point(292, 116);
             dobLabel.Name = "dobLabel";
             dobLabel.Size = new System.Drawing.Size(77, 17);
             dobLabel.TabIndex = 4;
@@ -87,7 +107,7 @@
             // genderLabel
             // 
             genderLabel.AutoSize = true;
-            genderLabel.Location = new System.Drawing.Point(318, 143);
+            genderLabel.Location = new System.Drawing.Point(335, 143);
             genderLabel.Name = "genderLabel";
             genderLabel.Size = new System.Drawing.Size(34, 17);
             genderLabel.TabIndex = 6;
@@ -96,7 +116,7 @@
             // noteLabel
             // 
             noteLabel.AutoSize = true;
-            noteLabel.Location = new System.Drawing.Point(293, 255);
+            noteLabel.Location = new System.Drawing.Point(310, 328);
             noteLabel.Name = "noteLabel";
             noteLabel.Size = new System.Drawing.Size(59, 17);
             noteLabel.TabIndex = 11;
@@ -105,11 +125,38 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(271, 407);
+            label1.Location = new System.Drawing.Point(296, 480);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(73, 17);
             label1.TabIndex = 15;
             label1.Text = "رقم الطبيب";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(264, 235);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(105, 17);
+            label2.TabIndex = 17;
+            label2.Text = "الحالة الاحتماعية";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(299, 266);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(70, 17);
+            label3.TabIndex = 18;
+            label3.Text = "فصيلة الدم";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(324, 294);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(45, 17);
+            label4.TabIndex = 19;
+            label4.Text = "المهنة";
             // 
             // panelEx1
             // 
@@ -133,6 +180,14 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.tb_age);
+            this.panelEx2.Controls.Add(this.label5);
+            this.panelEx2.Controls.Add(this.comboBox3);
+            this.panelEx2.Controls.Add(this.comboBox2);
+            this.panelEx2.Controls.Add(this.comboBox1);
+            this.panelEx2.Controls.Add(label4);
+            this.panelEx2.Controls.Add(label3);
+            this.panelEx2.Controls.Add(label2);
             this.panelEx2.Controls.Add(this.tb_drid);
             this.panelEx2.Controls.Add(label1);
             this.panelEx2.Controls.Add(this.pictureBox1);
@@ -149,7 +204,7 @@
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx2.Location = new System.Drawing.Point(0, 53);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(381, 492);
+            this.panelEx2.Size = new System.Drawing.Size(381, 572);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -159,21 +214,18 @@
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 1;
             // 
-            // tb_drid
+            // comboBox3
             // 
-            this.tb_drid.BackColor = System.Drawing.SystemColors.ButtonFace;
-            // 
-            // 
-            // 
-            this.tb_drid.Border.Class = "TextBoxBorder";
-            this.tb_drid.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tb_drid.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "usid", true));
-            this.tb_drid.Location = new System.Drawing.Point(91, 402);
-            this.tb_drid.Name = "tb_drid";
-            this.tb_drid.ReadOnly = true;
-            this.tb_drid.Size = new System.Drawing.Size(164, 29);
-            this.tb_drid.TabIndex = 16;
-            this.tb_drid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "job", true));
+            this.comboBox3.DataSource = this.metaJobBindingSource;
+            this.comboBox3.DisplayMember = "name";
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(57, 287);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(198, 24);
+            this.comboBox3.TabIndex = 22;
+            this.comboBox3.ValueMember = "id";
             // 
             // pateintBindingSource
             // 
@@ -184,6 +236,63 @@
             // 
             this.clinic_DBDataSet.DataSetName = "clinic_DBDataSet";
             this.clinic_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // metaJobBindingSource
+            // 
+            this.metaJobBindingSource.DataMember = "metaJob";
+            this.metaJobBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "blood_type", true));
+            this.comboBox2.DataSource = this.metaBloodTypesBindingSource;
+            this.comboBox2.DisplayMember = "name";
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(57, 259);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(198, 24);
+            this.comboBox2.TabIndex = 21;
+            this.comboBox2.ValueMember = "id";
+            // 
+            // metaBloodTypesBindingSource
+            // 
+            this.metaBloodTypesBindingSource.DataMember = "metaBloodTypes";
+            this.metaBloodTypesBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "maritalstatus", true));
+            this.comboBox1.DataSource = this.mritalStatusmetaBindingSource;
+            this.comboBox1.DisplayMember = "name";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(57, 232);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(198, 24);
+            this.comboBox1.TabIndex = 20;
+            this.comboBox1.ValueMember = "id";
+            // 
+            // mritalStatusmetaBindingSource
+            // 
+            this.mritalStatusmetaBindingSource.DataMember = "MritalStatusmeta";
+            this.mritalStatusmetaBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // tb_drid
+            // 
+            this.tb_drid.BackColor = System.Drawing.SystemColors.ButtonFace;
+            // 
+            // 
+            // 
+            this.tb_drid.Border.Class = "TextBoxBorder";
+            this.tb_drid.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tb_drid.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "usid", true));
+            this.tb_drid.Location = new System.Drawing.Point(91, 475);
+            this.tb_drid.Name = "tb_drid";
+            this.tb_drid.ReadOnly = true;
+            this.tb_drid.Size = new System.Drawing.Size(164, 29);
+            this.tb_drid.TabIndex = 16;
+            this.tb_drid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
@@ -215,7 +324,7 @@
             // noteTextBox
             // 
             this.noteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "note", true));
-            this.noteTextBox.Location = new System.Drawing.Point(57, 248);
+            this.noteTextBox.Location = new System.Drawing.Point(57, 321);
             this.noteTextBox.Multiline = true;
             this.noteTextBox.Name = "noteTextBox";
             this.noteTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -241,6 +350,7 @@
             this.dobDateTimePicker.RightToLeftLayout = true;
             this.dobDateTimePicker.Size = new System.Drawing.Size(200, 24);
             this.dobDateTimePicker.TabIndex = 5;
+            this.dobDateTimePicker.ValueChanged += new System.EventHandler(this.dobDateTimePicker_ValueChanged);
             // 
             // nCD_PCheckBox
             // 
@@ -271,7 +381,7 @@
             this.panelEx3.Controls.Add(this.btn_exit);
             this.panelEx3.Controls.Add(this.btn_save);
             this.panelEx3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelEx3.Location = new System.Drawing.Point(0, 490);
+            this.panelEx3.Location = new System.Drawing.Point(0, 570);
             this.panelEx3.Name = "panelEx3";
             this.panelEx3.Size = new System.Drawing.Size(381, 55);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
@@ -315,10 +425,13 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BloodTypemetaTableAdapter = null;
             this.tableAdapterManager.ClinicInfoTableAdapter = null;
             this.tableAdapterManager.drugTableAdapter = null;
             this.tableAdapterManager.GendermetaTableAdapter = null;
+            this.tableAdapterManager.metaJobTableAdapter = null;
             this.tableAdapterManager.metaTableAdapter = null;
+            this.tableAdapterManager.MritalStatusmetaTableAdapter = null;
             this.tableAdapterManager.PateintTableAdapter = this.pateintTableAdapter;
             this.tableAdapterManager.QueueTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -330,12 +443,42 @@
             // 
             this.gendermetaTableAdapter.ClearBeforeFill = true;
             // 
+            // mritalStatusmetaTableAdapter
+            // 
+            this.mritalStatusmetaTableAdapter.ClearBeforeFill = true;
+            // 
+            // bloodTypemetaTableAdapter
+            // 
+            this.bloodTypemetaTableAdapter.ClearBeforeFill = true;
+            // 
+            // metaJobTableAdapter
+            // 
+            this.metaJobTableAdapter.ClearBeforeFill = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(256, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 17);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "العمر";
+            // 
+            // tb_age
+            // 
+            this.tb_age.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "age", true));
+            this.tb_age.Location = new System.Drawing.Point(177, 23);
+            this.tb_age.Name = "tb_age";
+            this.tb_age.ReadOnly = true;
+            this.tb_age.Size = new System.Drawing.Size(78, 24);
+            this.tb_age.TabIndex = 24;
+            // 
             // Dlg_AddPateint
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btn_exit;
-            this.ClientSize = new System.Drawing.Size(381, 545);
+            this.ClientSize = new System.Drawing.Size(381, 625);
             this.Controls.Add(this.panelEx3);
             this.Controls.Add(this.panelEx2);
             this.Controls.Add(this.panelEx1);
@@ -348,6 +491,9 @@
             this.panelEx2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metaJobBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metaBloodTypesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mritalStatusmetaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).EndInit();
             this.panelEx3.ResumeLayout(false);
@@ -376,5 +522,16 @@
         private System.Windows.Forms.ComboBox cb_gender;
         private System.Windows.Forms.PictureBox pictureBox1;
         private DevComponents.DotNetBar.Controls.TextBoxX tb_drid;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource mritalStatusmetaBindingSource;
+        private clinic_DBDataSetTableAdapters.MritalStatusmetaTableAdapter mritalStatusmetaTableAdapter;
+        private System.Windows.Forms.BindingSource metaBloodTypesBindingSource;
+        private clinic_DBDataSetTableAdapters.BloodTypemetaTableAdapter bloodTypemetaTableAdapter;
+        private System.Windows.Forms.BindingSource metaJobBindingSource;
+        private clinic_DBDataSetTableAdapters.metaJobTableAdapter metaJobTableAdapter;
+        private System.Windows.Forms.TextBox tb_age;
+        private System.Windows.Forms.Label label5;
     }
 }

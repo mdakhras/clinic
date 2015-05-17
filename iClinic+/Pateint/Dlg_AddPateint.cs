@@ -26,6 +26,12 @@ namespace iClinic_.Pateint
 
         private void Dlg_AddPateint_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.metaJob' table. You can move, or remove it, as needed.
+            this.metaJobTableAdapter.Fill(this.clinic_DBDataSet.metaJob);
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.metaBloodTypes' table. You can move, or remove it, as needed.
+            this.bloodTypemetaTableAdapter.Fill(this.clinic_DBDataSet.metaBloodTypes);
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.MritalStatusmeta' table. You can move, or remove it, as needed.
+            this.mritalStatusmetaTableAdapter.Fill(this.clinic_DBDataSet.MritalStatusmeta);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Gendermeta' table. You can move, or remove it, as needed.
             this.gendermetaTableAdapter.Fill(this.clinic_DBDataSet.Gendermeta);
             this.pateintBindingSource.AddNew();
@@ -67,6 +73,12 @@ namespace iClinic_.Pateint
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void dobDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            int age = DateTime.Now.Year - dobDateTimePicker.Value.Year;
+            tb_age.Text = age.ToString();
         }
     }
 }

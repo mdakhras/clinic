@@ -59,13 +59,37 @@ namespace iClinic_.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int firstrun {
             get {
                 return ((int)(this["firstrun"]));
             }
             set {
                 this["firstrun"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("bilal")]
+        public string defaultusr {
+            get {
+                return ((string)(this["defaultusr"]));
+            }
+            set {
+                this["defaultusr"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("123")]
+        public string defaultpwd {
+            get {
+                return ((string)(this["defaultpwd"]));
+            }
+            set {
+                this["defaultpwd"] = value;
             }
         }
     }

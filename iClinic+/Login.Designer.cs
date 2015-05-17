@@ -110,6 +110,7 @@
             // 
             this.btn_exit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_exit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_exit.Location = new System.Drawing.Point(94, 132);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(75, 23);
@@ -154,6 +155,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panelEx1.ResumeLayout(false);
             this.ResumeLayout(false);
 

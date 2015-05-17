@@ -25,11 +25,14 @@ namespace iClinic_.Visits
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Pateint' table. You can move, or remove it, as needed.
             this.pateintTableAdapter.Fill(this.clinic_DBDataSet.Pateint);
 
-            DataRowView drv = (DataRowView)pateintBindingSource.Current;
-            int pateintid = (int)drv["id"];
+            if (dataGridViewX2.Rows.Count != 0)
+            {
+                DataRowView drv = (DataRowView)pateintBindingSource.Current;
+                int pateintid = (int)drv["id"];
 
-            visitBindingSource.Filter = " pid=" + pateintid;
-            visitBindingSource.EndEdit();
+                visitBindingSource.Filter = " pid=" + pateintid;
+                visitBindingSource.EndEdit();
+            }//end if
 
         }
 
@@ -45,13 +48,16 @@ namespace iClinic_.Visits
 
         private void btn_addNewVisit_Click(object sender, EventArgs e)
         {
-            DataRowView drv = (DataRowView)pateintBindingSource.Current;
-            int pateintid = (int)drv["id"];
+            if (dataGridViewX2.Rows.Count != 0)
+            {
+                DataRowView drv = (DataRowView)pateintBindingSource.Current;
+                int pateintid = (int)drv["id"];
 
-            Dlg_NewVisit dlg = new Dlg_NewVisit(pateintid);
-            dlg.ShowDialog();
-            visitTableAdapter.Fill(clinic_DBDataSet.Visit);
-            visitBindingSource.Filter = " pid=" + pateintid;
+                Dlg_NewVisit dlg = new Dlg_NewVisit(pateintid);
+                dlg.ShowDialog();
+                visitTableAdapter.Fill(clinic_DBDataSet.Visit);
+                visitBindingSource.Filter = " pid=" + pateintid;
+            }
         }
 
         private void btn_del_Click(object sender, EventArgs e)

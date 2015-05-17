@@ -51,5 +51,11 @@ namespace iClinic_
         {
             Application.Exit();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            tb_usname.Text = Properties.Settings.Default.defaultusr;
+            tb_pwd.Text = Properties.Settings.Default.defaultpwd;
+        }
     }
 }
