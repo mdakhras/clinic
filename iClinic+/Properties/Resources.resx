@@ -136,10 +136,13 @@
   <data name="patient_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\patient_ico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="patient2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\patient2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clinic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clinic21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="patient2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\patient2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pills_medical_hospital_health_medicine_drug_pharmacy-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pills_medical_hospital_health_medicine_drug_pharmacy-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

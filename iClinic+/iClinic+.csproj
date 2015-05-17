@@ -48,19 +48,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Design">
-      <HintPath>..\..\..\..\..\DotNetToolKit\DevComponents.DotNetBar.Design.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.DotNetBar.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>..\..\..\..\..\DotNetToolKit\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation">
-      <HintPath>..\..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation.Design">
-      <HintPath>..\..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="DevComponents.TreeGX">
-      <HintPath>..\..\..\..\..\DotNetToolKit\DevComponents.TreeGX.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.Instrumentation.Design.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -79,6 +76,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>clinic_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Drugs\Dlg_AddDrugs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drugs\Dlg_AddDrugs.Designer.cs">
+      <DependentUpon>Dlg_AddDrugs.cs</DependentUpon>
     </Compile>
     <Compile Include="Drugs\Drug.cs">
       <SubType>Form</SubType>
@@ -136,6 +139,9 @@
     <Compile Include="Visits\Visit.Designer.cs">
       <DependentUpon>Visit.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Drugs\Dlg_AddDrugs.resx">
+      <DependentUpon>Dlg_AddDrugs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Drugs\Drug.resx">
       <DependentUpon>Drug.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +214,7 @@
     <Content Include="clinic_DB.sdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\pills_medical_hospital_health_medicine_drug_pharmacy-64.png" />
     <None Include="Resources\patient2.png" />
     <None Include="Resources\calendar.png" />
     <None Include="Resources\clinic3.png" />

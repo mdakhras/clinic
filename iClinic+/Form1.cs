@@ -45,5 +45,14 @@ namespace iClinic_
                 login.ShowDialog();
             }
         }
+
+        private void buttonItem18_Click(object sender, EventArgs e)
+        {
+            Drugs.Drug drg = new Drugs.Drug();
+            drg.MdiParent = this;
+            drg.WindowState = FormWindowState.Maximized;
+            drg.Show();
+        
+        }
     }
 }
