@@ -43,7 +43,7 @@ namespace iClinic_.Drugs
         {
             // TODO: This line of code loads data into the 'clinic_DBDataSet.drug' table. You can move, or remove it, as needed.
             this.drugTableAdapter.Fill(this.clinic_DBDataSet.drug);
-            this.drugBindingSource.AddNew();
+            this.drugBindingSource.AddNew(); //do it
 
         }
     }
