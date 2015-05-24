@@ -45,5 +45,21 @@ namespace iClinic_.Drugs
             dlg.ShowDialog();
             drugTableAdapter.Fill(clinic_DBDataSet.drug);
         }
+
+        private void btn_DeletDrug_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("هل تريد حذف الدواء بالتأكيد", "تنبيه", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.drugBindingSource.RemoveCurrent();
+                this.drugBindingSource.EndEdit();
+                this.drugTableAdapter.Update(clinic_DBDataSet.drug);
+            }
+        }
+
+        private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

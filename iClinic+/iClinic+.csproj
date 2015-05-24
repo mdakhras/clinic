@@ -48,16 +48,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Design">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.DotNetBar.Design.dll</HintPath>
+      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.DotNetBar.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation.Design">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style\DevComponents.Instrumentation.Design.dll</HintPath>
+      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX">
+      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.TreeGX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -141,6 +144,7 @@
     </Compile>
     <EmbeddedResource Include="Drugs\Dlg_AddDrugs.resx">
       <DependentUpon>Dlg_AddDrugs.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Drugs\Drug.resx">
       <DependentUpon>Drug.cs</DependentUpon>
