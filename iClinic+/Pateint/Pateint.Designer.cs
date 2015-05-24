@@ -34,8 +34,8 @@
             System.Windows.Forms.Label genderLabel;
             System.Windows.Forms.Label noteLabel;
             System.Windows.Forms.Label label2;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_AddVisit = new DevComponents.DotNetBar.ButtonX();
@@ -46,6 +46,12 @@
             this.btn_addP = new DevComponents.DotNetBar.ButtonX();
             this.label1 = new System.Windows.Forms.Label();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.metaJobBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.metaBloodTypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.mritalStatusmetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -66,13 +72,7 @@
             this.gendermetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.GendermetaTableAdapter();
             this.tableAdapterManager = new iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager();
             this.mritalStatusmetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.MritalStatusmetaTableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.metaBloodTypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bloodTypemetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.BloodTypemetaTableAdapter();
-            this.metaJobBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metaJobTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.metaJobTableAdapter();
             nameLabel = new System.Windows.Forms.Label();
             dobLabel = new System.Windows.Forms.Label();
@@ -84,18 +84,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).BeginInit();
             this.panelEx2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metaJobBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metaBloodTypesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mritalStatusmetaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).BeginInit();
             this.panelEx3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.metaBloodTypesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.metaJobBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(269, 58);
+            nameLabel.Location = new System.Drawing.Point(259, 58);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(30, 13);
             nameLabel.TabIndex = 2;
@@ -104,7 +104,7 @@
             // dobLabel
             // 
             dobLabel.AutoSize = true;
-            dobLabel.Location = new System.Drawing.Point(242, 82);
+            dobLabel.Location = new System.Drawing.Point(232, 82);
             dobLabel.Name = "dobLabel";
             dobLabel.Size = new System.Drawing.Size(57, 13);
             dobLabel.TabIndex = 4;
@@ -113,7 +113,7 @@
             // genderLabel
             // 
             genderLabel.AutoSize = true;
-            genderLabel.Location = new System.Drawing.Point(269, 107);
+            genderLabel.Location = new System.Drawing.Point(259, 107);
             genderLabel.Name = "genderLabel";
             genderLabel.Size = new System.Drawing.Size(30, 13);
             genderLabel.TabIndex = 6;
@@ -122,7 +122,7 @@
             // noteLabel
             // 
             noteLabel.AutoSize = true;
-            noteLabel.Location = new System.Drawing.Point(254, 305);
+            noteLabel.Location = new System.Drawing.Point(244, 305);
             noteLabel.Name = "noteLabel";
             noteLabel.Size = new System.Drawing.Size(45, 13);
             noteLabel.TabIndex = 12;
@@ -131,7 +131,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(219, 192);
+            label2.Location = new System.Drawing.Point(209, 192);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(80, 13);
             label2.TabIndex = 16;
@@ -265,10 +265,10 @@
             this.panelEx2.Controls.Add(noteLabel);
             this.panelEx2.Controls.Add(this.noteTextBox);
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelEx2.Location = new System.Drawing.Point(843, 53);
+            this.panelEx2.Location = new System.Drawing.Point(858, 53);
             this.panelEx2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(318, 485);
+            this.panelEx2.Size = new System.Drawing.Size(303, 485);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -278,6 +278,60 @@
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 1;
             // 
+            // comboBox4
+            // 
+            this.comboBox4.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "job", true));
+            this.comboBox4.DataSource = this.metaJobBindingSource;
+            this.comboBox4.DisplayMember = "name";
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(32, 248);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(171, 21);
+            this.comboBox4.TabIndex = 21;
+            this.comboBox4.ValueMember = "id";
+            // 
+            // metaJobBindingSource
+            // 
+            this.metaJobBindingSource.DataMember = "metaJob";
+            this.metaJobBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "blood_type", true));
+            this.comboBox3.DataSource = this.metaBloodTypesBindingSource;
+            this.comboBox3.DisplayMember = "name";
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(32, 218);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(171, 21);
+            this.comboBox3.TabIndex = 20;
+            this.comboBox3.ValueMember = "id";
+            // 
+            // metaBloodTypesBindingSource
+            // 
+            this.metaBloodTypesBindingSource.DataMember = "metaBloodTypes";
+            this.metaBloodTypesBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(256, 248);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "المهنة";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(236, 221);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "فصيلة الدم";
+            // 
             // comboBox2
             // 
             this.comboBox2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "maritalstatus", true));
@@ -285,7 +339,7 @@
             this.comboBox2.DisplayMember = "name";
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(42, 187);
+            this.comboBox2.Location = new System.Drawing.Point(32, 187);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(172, 21);
@@ -304,7 +358,7 @@
             this.comboBox1.DisplayMember = "name";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(42, 103);
+            this.comboBox1.Location = new System.Drawing.Point(32, 103);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(172, 21);
@@ -320,7 +374,7 @@
             // 
             this.btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_Save.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_Save.Location = new System.Drawing.Point(130, 415);
+            this.btn_Save.Location = new System.Drawing.Point(120, 415);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(93, 33);
@@ -332,7 +386,7 @@
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(42, 54);
+            this.nameTextBox.Location = new System.Drawing.Point(32, 54);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(172, 20);
@@ -342,7 +396,7 @@
             // 
             this.dobDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.pateintBindingSource, "dob", true));
             this.dobDateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dobDateTimePicker.Location = new System.Drawing.Point(42, 79);
+            this.dobDateTimePicker.Location = new System.Drawing.Point(32, 79);
             this.dobDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dobDateTimePicker.Name = "dobDateTimePicker";
             this.dobDateTimePicker.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -353,7 +407,7 @@
             // nCD_PCheckBox
             // 
             this.nCD_PCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.pateintBindingSource, "NCD_P", true));
-            this.nCD_PCheckBox.Location = new System.Drawing.Point(42, 128);
+            this.nCD_PCheckBox.Location = new System.Drawing.Point(32, 128);
             this.nCD_PCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nCD_PCheckBox.Name = "nCD_PCheckBox";
             this.nCD_PCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -365,7 +419,7 @@
             // pregnancyCheckBox
             // 
             this.pregnancyCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.pateintBindingSource, "pregnancy", true));
-            this.pregnancyCheckBox.Location = new System.Drawing.Point(42, 152);
+            this.pregnancyCheckBox.Location = new System.Drawing.Point(32, 152);
             this.pregnancyCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pregnancyCheckBox.Name = "pregnancyCheckBox";
             this.pregnancyCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -377,7 +431,7 @@
             // noteTextBox
             // 
             this.noteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "note", true));
-            this.noteTextBox.Location = new System.Drawing.Point(42, 302);
+            this.noteTextBox.Location = new System.Drawing.Point(32, 302);
             this.noteTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.noteTextBox.Multiline = true;
             this.noteTextBox.Name = "noteTextBox";
@@ -393,7 +447,7 @@
             this.panelEx3.Location = new System.Drawing.Point(0, 53);
             this.panelEx3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx3.Name = "panelEx3";
-            this.panelEx3.Size = new System.Drawing.Size(843, 485);
+            this.panelEx3.Size = new System.Drawing.Size(858, 485);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -407,8 +461,8 @@
             // 
             this.dataGridViewX1.AllowUserToAddRows = false;
             this.dataGridViewX1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dataGridViewX1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dataGridViewX1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewX1.AutoGenerateColumns = false;
             this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewX1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -417,14 +471,14 @@
             this.dobDataGridViewTextBoxColumn,
             this.genderDataGridViewTextBoxColumn});
             this.dataGridViewX1.DataSource = this.pateintBindingSource;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(0, 0);
@@ -434,7 +488,7 @@
             this.dataGridViewX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridViewX1.RowTemplate.Height = 26;
             this.dataGridViewX1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewX1.Size = new System.Drawing.Size(843, 485);
+            this.dataGridViewX1.Size = new System.Drawing.Size(858, 485);
             this.dataGridViewX1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -502,63 +556,9 @@
             // 
             this.mritalStatusmetaTableAdapter.ClearBeforeFill = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(246, 221);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "فصيلة الدم";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(266, 248);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "المهنة";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "blood_type", true));
-            this.comboBox3.DataSource = this.metaBloodTypesBindingSource;
-            this.comboBox3.DisplayMember = "name";
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(42, 218);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(171, 21);
-            this.comboBox3.TabIndex = 20;
-            this.comboBox3.ValueMember = "id";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.pateintBindingSource, "job", true));
-            this.comboBox4.DataSource = this.metaJobBindingSource;
-            this.comboBox4.DisplayMember = "name";
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(42, 248);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(171, 21);
-            this.comboBox4.TabIndex = 21;
-            this.comboBox4.ValueMember = "id";
-            // 
-            // metaBloodTypesBindingSource
-            // 
-            this.metaBloodTypesBindingSource.DataMember = "metaBloodTypes";
-            this.metaBloodTypesBindingSource.DataSource = this.clinic_DBDataSet;
-            // 
             // bloodTypemetaTableAdapter
             // 
             this.bloodTypemetaTableAdapter.ClearBeforeFill = true;
-            // 
-            // metaJobBindingSource
-            // 
-            this.metaJobBindingSource.DataMember = "metaJob";
-            this.metaJobBindingSource.DataSource = this.clinic_DBDataSet;
             // 
             // metaJobTableAdapter
             // 
@@ -584,12 +584,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.clinic_DBDataSet)).EndInit();
             this.panelEx2.ResumeLayout(false);
             this.panelEx2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metaJobBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.metaBloodTypesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mritalStatusmetaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gendermetaBindingSource)).EndInit();
             this.panelEx3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.metaBloodTypesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.metaJobBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
