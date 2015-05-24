@@ -18,6 +18,10 @@ namespace iClinic_.Pateint
 
         private void Pateint_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.metaJob' table. You can move, or remove it, as needed.
+            this.metaJobTableAdapter.Fill(this.clinic_DBDataSet.metaJob);
+            // TODO: This line of code loads data into the 'clinic_DBDataSet.metaBloodTypes' table. You can move, or remove it, as needed.
+            this.bloodTypemetaTableAdapter.Fill(this.clinic_DBDataSet.metaBloodTypes);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.MritalStatusmeta' table. You can move, or remove it, as needed.
             this.mritalStatusmetaTableAdapter.Fill(this.clinic_DBDataSet.MritalStatusmeta);
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Gendermeta' table. You can move, or remove it, as needed.
