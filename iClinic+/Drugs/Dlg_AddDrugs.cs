@@ -26,8 +26,6 @@ namespace iClinic_.Drugs
             this.drugBindingSource.EndEdit();
             this.drugTableAdapter.Update(clinic_DBDataSet.drug);
 
-           
-
             this.drugTableAdapter.Fill(clinic_DBDataSet.drug);
 
             this.Dispose();

@@ -103,9 +103,10 @@
             this.panel1.Controls.Add(this.btn_Adddrug);
             this.panel1.Controls.Add(this.tx_Drugname);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(707, 3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(710, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(456, 60);
+            this.panel1.Size = new System.Drawing.Size(456, 63);
             this.panel1.TabIndex = 0;
             // 
             // btn_DeletDrug

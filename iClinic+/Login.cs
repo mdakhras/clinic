@@ -37,7 +37,7 @@ namespace iClinic_
 
                     this.Dispose();
 
-                    MessageBox.Show("Welcone Dr." + Properties.Settings.Default.username + " With ID:" + Properties.Settings.Default.userid);
+                 //   MessageBox.Show("Welcone Dr." + Properties.Settings.Default.username + " With ID:" + Properties.Settings.Default.userid);
                    
                 }
                 else
