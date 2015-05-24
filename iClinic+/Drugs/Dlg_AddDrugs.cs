@@ -25,7 +25,11 @@ namespace iClinic_.Drugs
         {
             this.drugBindingSource.EndEdit();
             this.drugTableAdapter.Update(clinic_DBDataSet.drug);
+<<<<<<< HEAD
            
+=======
+            this.drugTableAdapter.Fill(clinic_DBDataSet.drug);
+>>>>>>> accc08ea17247c59061d9db819d42a3c2dc36d8c
             this.Dispose();
 
         }
@@ -42,7 +46,10 @@ namespace iClinic_.Drugs
         {
             // TODO: This line of code loads data into the 'clinic_DBDataSet.drug' table. You can move, or remove it, as needed.
             this.drugTableAdapter.Fill(this.clinic_DBDataSet.drug);
+<<<<<<< HEAD
             this.drugBindingSource.AddNew();
+=======
+>>>>>>> accc08ea17247c59061d9db819d42a3c2dc36d8c
 
         }
     }
