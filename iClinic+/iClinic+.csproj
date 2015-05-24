@@ -48,16 +48,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Design">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.DotNetBar.Design.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.DotNetBar.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation.Design">
-      <HintPath>..\..\..\..\DotNetToolKit\DevComponents.Instrumentation.Design.dll</HintPath>
+      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.Instrumentation.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.TreeGX">
       <HintPath>..\..\..\..\DotNetToolKit\DevComponents.TreeGX.dll</HintPath>
