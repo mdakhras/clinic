@@ -92,6 +92,39 @@
     <Compile Include="Drugs\Drug.Designer.cs">
       <DependentUpon>Drug.cs</DependentUpon>
     </Compile>
+	
+	
+	<Compile Include="Doctors\Dlg_addnewDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\Dlg_addnewDoctors.Designer.cs">
+      <DependentUpon>Dlg_addnewDoctors.cs</DependentUpon>
+    </Compile>
+	
+	
+    <Compile Include="Doctors\Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctors\Doctors.Designer.cs">
+      <DependentUpon>Doctors.cs</DependentUpon>
+    </Compile>
+	
+	
+	<Compile Include="Appointment\appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment\appointment.Designer.cs">
+      <DependentUpon>appointment.cs</DependentUpon>
+    </Compile>
+	
+	<Compile Include="Appointment\Dlg_appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment\Dlg_appointment.Designer.cs">
+      <DependentUpon>Dlg_appointment.cs</DependentUpon>
+    </Compile>
+	
+	
     <Compile Include="FirstRun.cs">
       <SubType>Form</SubType>
     </Compile>
