@@ -52,7 +52,23 @@ namespace iClinic_
             drg.MdiParent = this;
             drg.WindowState = FormWindowState.Maximized;
             drg.Show();
+            
         
+        }
+
+        private void btn_clinic_info_Click(object sender, EventArgs e)
+        {
+            clinicinfo.Clinic_info clin_fo = new clinicinfo.Clinic_info();
+           
+            clin_fo.ShowDialog(); 
+        }
+
+        private void btn_doctors_Click(object sender, EventArgs e)
+        {
+            Doctors.Doctors doc = new Doctors.Doctors();
+            doc.MdiParent = this;
+            doc.WindowState = FormWindowState.Maximized;
+            doc.Show();
         }
     }
 }
