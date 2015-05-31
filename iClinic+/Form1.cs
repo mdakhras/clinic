@@ -18,13 +18,6 @@ namespace iClinic_
 
         private void btn_pateint_Click(object sender, EventArgs e)
         {
-            if (this.MdiChildren.Length > 0) //close childrens only when there are some
-            {
-                foreach (Form childForm in this.MdiChildren)
-                    childForm.Close();
-
-                // e.Cancel = true;  //cancel Form2 closing
-            }
             Pateint.Pateint pateint = new Pateint.Pateint();
             pateint.MdiParent = this;
             pateint.WindowState = FormWindowState.Maximized;
@@ -33,13 +26,6 @@ namespace iClinic_
 
         private void btn_visits_Click(object sender, EventArgs e)
         {
-            if (this.MdiChildren.Length > 0) //close childrens only when there are some
-            {
-                foreach (Form childForm in this.MdiChildren)
-                    childForm.Close();
-
-                // e.Cancel = true;  //cancel Form2 closing
-            }
             Visits.Visit pateint = new Visits.Visit();
             pateint.MdiParent = this;
             pateint.WindowState = FormWindowState.Maximized;
@@ -62,75 +48,27 @@ namespace iClinic_
 
         private void buttonItem18_Click(object sender, EventArgs e)
         {
-            if (this.MdiChildren.Length > 0) //close childrens only when there are some
-            {
-                foreach (Form childForm in this.MdiChildren)
-                    childForm.Close();
-
-                // e.Cancel = true;  //cancel Form2 closing
-            }
             Drugs.Drug drg = new Drugs.Drug();
             drg.MdiParent = this;
             drg.WindowState = FormWindowState.Maximized;
             drg.Show();
+            
         
         }
 
-        private void buttonItem15_Click(object sender, EventArgs e)
+        private void btn_clinic_info_Click(object sender, EventArgs e)
         {
-            if (this.MdiChildren.Length > 0) //close childrens only when there are some
-            {
-                foreach (Form childForm in this.MdiChildren)
-                    childForm.Close();
-
-                // e.Cancel = true;  //cancel Form2 closing
-            }
+            clinicinfo.Clinic_info clin_fo = new clinicinfo.Clinic_info();
+           
+            clin_fo.ShowDialog(); 
         }
 
-        private void buttonItem14_Click(object sender, EventArgs e)
+        private void btn_doctors_Click(object sender, EventArgs e)
         {
-            if (this.MdiChildren.Length > 0) //close childrens only when there are some
-            {
-                foreach (Form childForm in this.MdiChildren)
-                    childForm.Close();
-
-                // e.Cancel = true;  //cancel Form2 closing
-            }
-        }
-
-        private void buttonItem16_Click(object sender, EventArgs e)
-        {
-            if (this.MdiChildren.Length > 0) //close childrens only when there are some
-            {
-                foreach (Form childForm in this.MdiChildren)
-                    childForm.Close();
-
-                // e.Cancel = true;  //cancel Form2 closing
-            }
-        }
-
-        private void buttonItem17_Click(object sender, EventArgs e)
-        {
-            if (this.MdiChildren.Length > 0) //close childrens only when there are some
-            {
-                foreach (Form childForm in this.MdiChildren)
-                    childForm.Close();
-
-                // e.Cancel = true;  //cancel Form2 closing
-            }
-
-            appointment.appointment ap = new appointment.appointment();
-            ap.MdiParent = this;
-            ap.WindowState = FormWindowState.Maximized;
-            ap.Show();
-
-
-
-        }
-
-        private void ribbonPanel2_Click(object sender, EventArgs e)
-        {
-
+            Doctors.Doctors doc = new Doctors.Doctors();
+            doc.MdiParent = this;
+            doc.WindowState = FormWindowState.Maximized;
+            doc.Show();
         }
     }
 }
