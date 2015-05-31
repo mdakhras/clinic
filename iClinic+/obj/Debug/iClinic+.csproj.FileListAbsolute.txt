@@ -40,16 +40,3 @@ C:\Github\clinic\iClinic+\obj\Debug\iClinic_.Visits.Visit.resources
 C:\Github\clinic\iClinic+\obj\Debug\iClinic+.csproj.GenerateResource.Cache
 C:\Github\clinic\iClinic+\obj\Debug\iClinic+.exe
 C:\Github\clinic\iClinic+\obj\Debug\iClinic+.pdb
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.clinicinfo.Clinic_info.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Drugs.Dlg_AddDrugs.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Drugs.Drug.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.FirstRun.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.FirstRun_Clinicinfo.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Form1.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Login.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Pateint.Dlg_AddPateint.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Pateint.Pateint.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Properties.Resources.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Visits.Dlg_NewVisit.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic_.Visits.Visit.resources
-F:\Masirat3\Training\31-5-2015\clinic\iClinic+\obj\Debug\iClinic+.csproj.GenerateResource.Cache

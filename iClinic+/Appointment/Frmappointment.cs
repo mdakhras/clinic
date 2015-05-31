@@ -38,8 +38,8 @@ namespace iClinic_.Appointment
         private void appointment_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'clinic_DBDataSet.Appointment' table. You can move, or remove it, as needed.
-            this.appointmentTableAdapter.Fill(this.clinic_DBDataSet.Appointment);
-            this.appointmentBindingSource.AddNew();
+           // this.appointmentTableAdapter.Fill(this.clinic_DBDataSet.Appointment);
+           // this.appointmentBindingSource.AddNew();
 
         }
 

@@ -73,10 +73,17 @@ namespace iClinic_
 
         private void btn_Appointment_Click(object sender, EventArgs e)
         {
-            Appointment.Frmappointment appointment = new Appointment.Frmappointment();
-            appointment.MdiParent = this;
-            appointment.WindowState = FormWindowState.Maximized;
-            appointment.Show();
+            try
+            {
+                Appointment.Frmappointment appointment = new Appointment.Frmappointment();
+                appointment.MdiParent = this;
+                appointment.WindowState = FormWindowState.Maximized;
+                appointment.Show();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
        
