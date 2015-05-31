@@ -70,6 +70,11 @@ namespace iClinic_.Visits
            
             this.visitBindingSource.EndEdit();
             this.visitTableAdapter.Update(clinic_DBDataSet.Visit);
+            clinic_DBDataSetTableAdapters.VisitTableAdapter visitAdapter = new clinic_DBDataSetTableAdapters.VisitTableAdapter();
+
+
+            visitAdapter.AddReview(pateintid, dateDateTimePicker.Value.AddDays(7), Properties.Settings.Default.userid);
+
             this.Dispose();
 
         }
