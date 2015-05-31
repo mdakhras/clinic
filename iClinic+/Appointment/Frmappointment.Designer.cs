@@ -1,6 +1,6 @@
-﻿namespace iClinic_.appointment
+﻿namespace iClinic_.Appointment
 {
-    partial class appointment
+    partial class Frmappointment
     {
         /// <summary>
         /// Required designer variable.

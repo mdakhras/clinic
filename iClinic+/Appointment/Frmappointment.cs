@@ -9,11 +9,11 @@ using System.Windows.Forms;
 using iClinic_.Appointment;
 
 
-namespace iClinic_.appointment
+namespace iClinic_.Appointment
 {
-    public partial class appointment : DevComponents.DotNetBar.Office2007Form
+    public partial class Frmappointment : DevComponents.DotNetBar.Office2007Form
     {
-        public appointment()
+        public Frmappointment()
         {
             InitializeComponent();
         }

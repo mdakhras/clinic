@@ -104,11 +104,11 @@
     <Compile Include="Doctors\Doctors.Designer.cs">
       <DependentUpon>Doctors.cs</DependentUpon>
     </Compile>
-    <Compile Include="Appointment\appointment.cs">
+    <Compile Include="Appointment\Frmappointment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Appointment\appointment.Designer.cs">
-      <DependentUpon>appointment.cs</DependentUpon>
+    <Compile Include="Appointment\Frmappointment.Designer.cs">
+      <DependentUpon>Frmappointment.cs</DependentUpon>
     </Compile>
     <Compile Include="Appointment\Dlg_appointment.cs">
       <SubType>Form</SubType>

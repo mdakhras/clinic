@@ -70,5 +70,15 @@ namespace iClinic_
             doc.WindowState = FormWindowState.Maximized;
             doc.Show();
         }
+
+        private void btn_Appointment_Click(object sender, EventArgs e)
+        {
+            Appointment.Frmappointment appointment = new Appointment.Frmappointment();
+            appointment.MdiParent = this;
+            appointment.WindowState = FormWindowState.Maximized;
+            appointment.Show();
+        }
+
+       
     }
 }
