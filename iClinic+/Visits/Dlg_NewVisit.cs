@@ -71,10 +71,16 @@ namespace iClinic_.Visits
             this.visitBindingSource.EndEdit();
             this.visitTableAdapter.Update(clinic_DBDataSet.Visit);
             clinic_DBDataSetTableAdapters.VisitTableAdapter visitAdapter = new clinic_DBDataSetTableAdapters.VisitTableAdapter();
+            clinic_DBDataSetTableAdapters.financialTableAdapter finadap = new clinic_DBDataSetTableAdapters.financialTableAdapter();
+            clinic_DBDataSetTableAdapters.ClinicInfoTableAdapter clinicInfoAdapter = new clinic_DBDataSetTableAdapters.ClinicInfoTableAdapter();
+
+            int visitcost = clinicInfoAdapter.GetVisitCost().Value;
+            //int reviewcost = clinicInfoAdapter.GetReviewCost().Value;
 
 
             visitAdapter.AddReview(pateintid, dateDateTimePicker.Value.AddDays(7), Properties.Settings.Default.userid);
-
+            finadap.AddFinancialTransaction("رسوم زيارة مريض", visitcost, 0);
+            
             this.Dispose();
 
         }
