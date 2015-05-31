@@ -150,6 +150,12 @@
     <Compile Include="Pateint\Dlg_AddPateint.Designer.cs">
       <DependentUpon>Dlg_AddPateint.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pateint\Dlg_pateintSearchid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pateint\Dlg_pateintSearchid.Designer.cs">
+      <DependentUpon>Dlg_pateintSearchid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pateint\Pateint.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pateint\Dlg_AddPateint.resx">
       <DependentUpon>Dlg_AddPateint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pateint\Dlg_pateintSearchid.resx">
+      <DependentUpon>Dlg_pateintSearchid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pateint\Pateint.resx">
       <DependentUpon>Pateint.cs</DependentUpon>

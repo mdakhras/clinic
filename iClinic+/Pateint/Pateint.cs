@@ -62,5 +62,22 @@ namespace iClinic_.Pateint
             Visits.Dlg_NewVisit dlg = new Visits.Dlg_NewVisit(pateintid);
             dlg.ShowDialog();
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            Dlg_pateintSearchid frm = new Dlg_pateintSearchid();
+            frm.ShowDialog();
+            int pateintid = frm.GetPateintid();
+            pateintBindingSource.Filter = " id=" + pateintid;
+            pateintBindingSource.EndEdit();
+
+
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            pateintBindingSource.RemoveFilter();
+            pateintBindingSource.EndEdit();
+        }
     }
 }
