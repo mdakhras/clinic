@@ -85,5 +85,7 @@ namespace iClinic_.Visits
             visitTableAdapter.Fill(clinic_DBDataSet.Visit);
             visitBindingSource.Filter = " pid=" + pateintid;
         }
+
+       
     }
 }

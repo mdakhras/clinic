@@ -46,15 +46,15 @@
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.type = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.visitTypemetaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.complainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diagnoseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.visitBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pateintTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.PateintTableAdapter();
             this.visitTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.VisitTableAdapter();
             this.visitTypemetaTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.VisitTypemetaTableAdapter();
-            this.type = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.complainDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diagnoseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEx1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pateintBindingSource)).BeginInit();
@@ -74,8 +74,9 @@
             this.panelEx1.Controls.Add(this.panel1);
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
+            this.panelEx1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(1334, 63);
+            this.panelEx1.Size = new System.Drawing.Size(1143, 51);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -92,18 +93,20 @@
             this.panel1.Controls.Add(this.textBoxX1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(736, 0);
+            this.panel1.Location = new System.Drawing.Point(496, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(598, 63);
+            this.panel1.Size = new System.Drawing.Size(647, 51);
             this.panel1.TabIndex = 0;
             // 
             // btn_del
             // 
             this.btn_del.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_del.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_del.Location = new System.Drawing.Point(42, 21);
+            this.btn_del.Location = new System.Drawing.Point(186, 17);
+            this.btn_del.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_del.Name = "btn_del";
-            this.btn_del.Size = new System.Drawing.Size(75, 23);
+            this.btn_del.Size = new System.Drawing.Size(64, 19);
             this.btn_del.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_del.TabIndex = 3;
             this.btn_del.Text = "حذف";
@@ -113,9 +116,10 @@
             // 
             this.btn_addNewVisit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_addNewVisit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_addNewVisit.Location = new System.Drawing.Point(123, 21);
+            this.btn_addNewVisit.Location = new System.Drawing.Point(255, 17);
+            this.btn_addNewVisit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addNewVisit.Name = "btn_addNewVisit";
-            this.btn_addNewVisit.Size = new System.Drawing.Size(75, 23);
+            this.btn_addNewVisit.Size = new System.Drawing.Size(64, 19);
             this.btn_addNewVisit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_addNewVisit.TabIndex = 2;
             this.btn_addNewVisit.Text = "اضافة زيارة";
@@ -130,9 +134,10 @@
             this.textBoxX1.Border.Class = "TextBoxBorder";
             this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "name", true));
-            this.textBoxX1.Location = new System.Drawing.Point(204, 19);
+            this.textBoxX1.Location = new System.Drawing.Point(325, 16);
+            this.textBoxX1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxX1.Name = "textBoxX1";
-            this.textBoxX1.Size = new System.Drawing.Size(295, 29);
+            this.textBoxX1.Size = new System.Drawing.Size(253, 20);
             this.textBoxX1.TabIndex = 1;
             // 
             // pateintBindingSource
@@ -148,9 +153,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(505, 24);
+            this.label1.Location = new System.Drawing.Point(583, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "اسم المريض";
             // 
@@ -161,9 +166,10 @@
             this.expandablePanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.expandablePanel1.Controls.Add(this.dataGridViewX2);
             this.expandablePanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.expandablePanel1.Location = new System.Drawing.Point(1009, 63);
+            this.expandablePanel1.Location = new System.Drawing.Point(864, 51);
+            this.expandablePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.expandablePanel1.Name = "expandablePanel1";
-            this.expandablePanel1.Size = new System.Drawing.Size(325, 609);
+            this.expandablePanel1.Size = new System.Drawing.Size(279, 495);
             this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -172,6 +178,7 @@
             this.expandablePanel1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
             this.expandablePanel1.Style.GradientAngle = 90;
             this.expandablePanel1.TabIndex = 1;
+            this.expandablePanel1.TitleHeight = 21;
             this.expandablePanel1.TitleStyle.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.TitleStyle.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.TitleStyle.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -199,13 +206,14 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewX2.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewX2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewX2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dataGridViewX2.Location = new System.Drawing.Point(0, 26);
+            this.dataGridViewX2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridViewX2.Location = new System.Drawing.Point(0, 21);
+            this.dataGridViewX2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewX2.Name = "dataGridViewX2";
             this.dataGridViewX2.ReadOnly = true;
             this.dataGridViewX2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridViewX2.RowTemplate.Height = 26;
-            this.dataGridViewX2.Size = new System.Drawing.Size(325, 583);
+            this.dataGridViewX2.Size = new System.Drawing.Size(279, 474);
             this.dataGridViewX2.TabIndex = 1;
             this.dataGridViewX2.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewX2_CellMouseClick);
             // 
@@ -223,9 +231,10 @@
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx2.Controls.Add(this.dataGridViewX1);
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx2.Location = new System.Drawing.Point(0, 63);
+            this.panelEx2.Location = new System.Drawing.Point(0, 51);
+            this.panelEx2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(1009, 609);
+            this.panelEx2.Size = new System.Drawing.Size(864, 495);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -259,38 +268,17 @@
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewX1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewX1.Name = "dataGridViewX1";
             this.dataGridViewX1.ReadOnly = true;
             this.dataGridViewX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridViewX1.RowTemplate.Height = 28;
             this.dataGridViewX1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewX1.Size = new System.Drawing.Size(1009, 609);
+            this.dataGridViewX1.Size = new System.Drawing.Size(864, 495);
             this.dataGridViewX1.TabIndex = 0;
             this.dataGridViewX1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellDoubleClick);
-            // 
-            // visitTypemetaBindingSource
-            // 
-            this.visitTypemetaBindingSource.DataMember = "VisitTypemeta";
-            this.visitTypemetaBindingSource.DataSource = this.clinic_DBDataSet;
-            // 
-            // visitBindingSource
-            // 
-            this.visitBindingSource.DataMember = "Visit";
-            this.visitBindingSource.DataSource = this.clinic_DBDataSet;
-            // 
-            // pateintTableAdapter
-            // 
-            this.pateintTableAdapter.ClearBeforeFill = true;
-            // 
-            // visitTableAdapter
-            // 
-            this.visitTableAdapter.ClearBeforeFill = true;
-            // 
-            // visitTypemetaTableAdapter
-            // 
-            this.visitTypemetaTableAdapter.ClearBeforeFill = true;
             // 
             // type
             // 
@@ -303,6 +291,11 @@
             this.type.Name = "type";
             this.type.ReadOnly = true;
             this.type.ValueMember = "id";
+            // 
+            // visitTypemetaBindingSource
+            // 
+            this.visitTypemetaBindingSource.DataMember = "VisitTypemeta";
+            this.visitTypemetaBindingSource.DataSource = this.clinic_DBDataSet;
             // 
             // complainDataGridViewTextBoxColumn
             // 
@@ -330,15 +323,33 @@
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             this.dateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // visitBindingSource
+            // 
+            this.visitBindingSource.DataMember = "Visit";
+            this.visitBindingSource.DataSource = this.clinic_DBDataSet;
+            // 
+            // pateintTableAdapter
+            // 
+            this.pateintTableAdapter.ClearBeforeFill = true;
+            // 
+            // visitTableAdapter
+            // 
+            this.visitTableAdapter.ClearBeforeFill = true;
+            // 
+            // visitTypemetaTableAdapter
+            // 
+            this.visitTypemetaTableAdapter.ClearBeforeFill = true;
+            // 
             // Visit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1334, 672);
+            this.ClientSize = new System.Drawing.Size(1143, 546);
             this.Controls.Add(this.panelEx2);
             this.Controls.Add(this.expandablePanel1);
             this.Controls.Add(this.panelEx1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Visit";
             this.Text = "الزيارات";
             this.Load += new System.EventHandler(this.Visit_Load);

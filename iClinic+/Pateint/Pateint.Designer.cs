@@ -102,45 +102,45 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(295, 69);
+            nameLabel.Location = new System.Drawing.Point(253, 56);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(44, 17);
+            nameLabel.Size = new System.Drawing.Size(30, 13);
             nameLabel.TabIndex = 2;
             nameLabel.Text = "الاسم";
             // 
             // dobLabel
             // 
             dobLabel.AutoSize = true;
-            dobLabel.Location = new System.Drawing.Point(271, 101);
+            dobLabel.Location = new System.Drawing.Point(232, 82);
             dobLabel.Name = "dobLabel";
-            dobLabel.Size = new System.Drawing.Size(72, 17);
+            dobLabel.Size = new System.Drawing.Size(57, 13);
             dobLabel.TabIndex = 4;
             dobLabel.Text = "تايخ الميلاد";
             // 
             // genderLabel
             // 
             genderLabel.AutoSize = true;
-            genderLabel.Location = new System.Drawing.Point(302, 132);
+            genderLabel.Location = new System.Drawing.Point(259, 107);
             genderLabel.Name = "genderLabel";
-            genderLabel.Size = new System.Drawing.Size(34, 17);
+            genderLabel.Size = new System.Drawing.Size(30, 13);
             genderLabel.TabIndex = 6;
             genderLabel.Text = "النوع";
             // 
             // noteLabel
             // 
             noteLabel.AutoSize = true;
-            noteLabel.Location = new System.Drawing.Point(285, 375);
+            noteLabel.Location = new System.Drawing.Point(244, 305);
             noteLabel.Name = "noteLabel";
-            noteLabel.Size = new System.Drawing.Size(59, 17);
+            noteLabel.Size = new System.Drawing.Size(45, 13);
             noteLabel.TabIndex = 12;
             noteLabel.Text = "ملاحظات";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(244, 236);
+            label2.Location = new System.Drawing.Point(209, 192);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(105, 17);
+            label2.Size = new System.Drawing.Size(80, 13);
             label2.TabIndex = 16;
             label2.Text = "الحالة الاجتماعية";
             // 
@@ -153,7 +153,7 @@
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(1354, 65);
+            this.panelEx1.Size = new System.Drawing.Size(1161, 53);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -173,19 +173,20 @@
             this.panel1.Controls.Add(this.btn_addP);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(490, 0);
+            this.panel1.Location = new System.Drawing.Point(420, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(864, 65);
+            this.panel1.Size = new System.Drawing.Size(741, 53);
             this.panel1.TabIndex = 0;
             // 
             // btn_clear
             // 
             this.btn_clear.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_clear.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_clear.Location = new System.Drawing.Point(54, 20);
+            this.btn_clear.Location = new System.Drawing.Point(46, 16);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(75, 23);
+            this.btn_clear.Size = new System.Drawing.Size(64, 19);
             this.btn_clear.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_clear.TabIndex = 6;
             this.btn_clear.Text = "مسح الفلتر";
@@ -195,9 +196,10 @@
             // 
             this.btn_search.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_search.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_search.Location = new System.Drawing.Point(135, 20);
+            this.btn_search.Location = new System.Drawing.Point(116, 16);
+            this.btn_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(75, 23);
+            this.btn_search.Size = new System.Drawing.Size(64, 19);
             this.btn_search.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_search.TabIndex = 5;
             this.btn_search.Text = "بحث";
@@ -207,10 +209,10 @@
             // 
             this.btn_AddVisit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_AddVisit.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_AddVisit.Location = new System.Drawing.Point(216, 20);
+            this.btn_AddVisit.Location = new System.Drawing.Point(185, 16);
             this.btn_AddVisit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_AddVisit.Name = "btn_AddVisit";
-            this.btn_AddVisit.Size = new System.Drawing.Size(75, 23);
+            this.btn_AddVisit.Size = new System.Drawing.Size(64, 19);
             this.btn_AddVisit.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_AddVisit.TabIndex = 4;
             this.btn_AddVisit.Text = "اضافة زيارة";
@@ -225,10 +227,10 @@
             this.tb_pateintName.Border.Class = "TextBoxBorder";
             this.tb_pateintName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.tb_pateintName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "name", true));
-            this.tb_pateintName.Location = new System.Drawing.Point(501, 17);
+            this.tb_pateintName.Location = new System.Drawing.Point(429, 14);
             this.tb_pateintName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_pateintName.Name = "tb_pateintName";
-            this.tb_pateintName.Size = new System.Drawing.Size(272, 29);
+            this.tb_pateintName.Size = new System.Drawing.Size(233, 20);
             this.tb_pateintName.TabIndex = 3;
             // 
             // pateintBindingSource
@@ -245,10 +247,10 @@
             // 
             this.btn_deleteP.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_deleteP.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_deleteP.Location = new System.Drawing.Point(298, 20);
+            this.btn_deleteP.Location = new System.Drawing.Point(255, 16);
             this.btn_deleteP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_deleteP.Name = "btn_deleteP";
-            this.btn_deleteP.Size = new System.Drawing.Size(75, 23);
+            this.btn_deleteP.Size = new System.Drawing.Size(64, 19);
             this.btn_deleteP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_deleteP.TabIndex = 2;
             this.btn_deleteP.Text = "حذف";
@@ -258,10 +260,10 @@
             // 
             this.btn_addP.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_addP.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_addP.Location = new System.Drawing.Point(379, 20);
+            this.btn_addP.Location = new System.Drawing.Point(325, 16);
             this.btn_addP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addP.Name = "btn_addP";
-            this.btn_addP.Size = new System.Drawing.Size(115, 23);
+            this.btn_addP.Size = new System.Drawing.Size(99, 19);
             this.btn_addP.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_addP.TabIndex = 1;
             this.btn_addP.Text = "اضافة بيانات المريض";
@@ -270,9 +272,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(779, 23);
+            this.label1.Location = new System.Drawing.Point(668, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "اسم المريض";
             // 
@@ -299,10 +301,10 @@
             this.panelEx2.Controls.Add(noteLabel);
             this.panelEx2.Controls.Add(this.noteTextBox);
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelEx2.Location = new System.Drawing.Point(1001, 65);
+            this.panelEx2.Location = new System.Drawing.Point(858, 53);
             this.panelEx2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(353, 597);
+            this.panelEx2.Size = new System.Drawing.Size(303, 485);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -317,26 +319,28 @@
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.tb_identity);
-            this.panel2.Location = new System.Drawing.Point(37, 18);
+            this.panel2.Location = new System.Drawing.Point(32, 15);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(304, 43);
+            this.panel2.Size = new System.Drawing.Size(261, 35);
             this.panel2.TabIndex = 24;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(233, 12);
+            this.label5.Location = new System.Drawing.Point(200, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 17);
+            this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 23;
             this.label5.Text = "رقم الهوية";
             // 
             // tb_identity
             // 
             this.tb_identity.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "p_identity", true));
-            this.tb_identity.Location = new System.Drawing.Point(67, 9);
+            this.tb_identity.Location = new System.Drawing.Point(57, 7);
+            this.tb_identity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_identity.Name = "tb_identity";
-            this.tb_identity.Size = new System.Drawing.Size(133, 24);
+            this.tb_identity.Size = new System.Drawing.Size(115, 20);
             this.tb_identity.TabIndex = 22;
             this.tb_identity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -347,10 +351,9 @@
             this.comboBox4.DisplayMember = "name";
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(37, 305);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox4.Location = new System.Drawing.Point(32, 248);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(199, 24);
+            this.comboBox4.Size = new System.Drawing.Size(171, 21);
             this.comboBox4.TabIndex = 21;
             this.comboBox4.ValueMember = "id";
             // 
@@ -366,10 +369,9 @@
             this.comboBox3.DisplayMember = "name";
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(37, 268);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox3.Location = new System.Drawing.Point(32, 218);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(199, 24);
+            this.comboBox3.Size = new System.Drawing.Size(171, 21);
             this.comboBox3.TabIndex = 20;
             this.comboBox3.ValueMember = "id";
             // 
@@ -381,18 +383,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(299, 305);
+            this.label4.Location = new System.Drawing.Point(256, 248);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 17);
+            this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "المهنة";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(275, 272);
+            this.label3.Location = new System.Drawing.Point(236, 221);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 17);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "فصيلة الدم";
             // 
@@ -403,10 +405,10 @@
             this.comboBox2.DisplayMember = "name";
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(37, 230);
+            this.comboBox2.Location = new System.Drawing.Point(32, 187);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 24);
+            this.comboBox2.Size = new System.Drawing.Size(172, 21);
             this.comboBox2.TabIndex = 17;
             this.comboBox2.ValueMember = "id";
             // 
@@ -422,10 +424,10 @@
             this.comboBox1.DisplayMember = "name";
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(37, 127);
+            this.comboBox1.Location = new System.Drawing.Point(32, 103);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
+            this.comboBox1.Size = new System.Drawing.Size(172, 21);
             this.comboBox1.TabIndex = 15;
             this.comboBox1.ValueMember = "id";
             // 
@@ -438,10 +440,10 @@
             // 
             this.btn_Save.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btn_Save.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btn_Save.Location = new System.Drawing.Point(140, 511);
+            this.btn_Save.Location = new System.Drawing.Point(120, 415);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(108, 41);
+            this.btn_Save.Size = new System.Drawing.Size(93, 33);
             this.btn_Save.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btn_Save.TabIndex = 14;
             this.btn_Save.Text = "حفظ التعديلات";
@@ -450,32 +452,32 @@
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(37, 66);
+            this.nameTextBox.Location = new System.Drawing.Point(32, 54);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(200, 24);
+            this.nameTextBox.Size = new System.Drawing.Size(172, 20);
             this.nameTextBox.TabIndex = 3;
             // 
             // dobDateTimePicker
             // 
             this.dobDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.pateintBindingSource, "dob", true));
             this.dobDateTimePicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dobDateTimePicker.Location = new System.Drawing.Point(37, 97);
+            this.dobDateTimePicker.Location = new System.Drawing.Point(32, 79);
             this.dobDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dobDateTimePicker.Name = "dobDateTimePicker";
             this.dobDateTimePicker.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dobDateTimePicker.RightToLeftLayout = true;
-            this.dobDateTimePicker.Size = new System.Drawing.Size(200, 24);
+            this.dobDateTimePicker.Size = new System.Drawing.Size(172, 20);
             this.dobDateTimePicker.TabIndex = 5;
             // 
             // nCD_PCheckBox
             // 
             this.nCD_PCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.pateintBindingSource, "NCD_P", true));
-            this.nCD_PCheckBox.Location = new System.Drawing.Point(37, 158);
+            this.nCD_PCheckBox.Location = new System.Drawing.Point(32, 128);
             this.nCD_PCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nCD_PCheckBox.Name = "nCD_PCheckBox";
             this.nCD_PCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nCD_PCheckBox.Size = new System.Drawing.Size(199, 25);
+            this.nCD_PCheckBox.Size = new System.Drawing.Size(171, 20);
             this.nCD_PCheckBox.TabIndex = 9;
             this.nCD_PCheckBox.Text = "أمراض مزمنة";
             this.nCD_PCheckBox.UseVisualStyleBackColor = true;
@@ -483,11 +485,11 @@
             // pregnancyCheckBox
             // 
             this.pregnancyCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.pateintBindingSource, "pregnancy", true));
-            this.pregnancyCheckBox.Location = new System.Drawing.Point(37, 187);
+            this.pregnancyCheckBox.Location = new System.Drawing.Point(32, 152);
             this.pregnancyCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pregnancyCheckBox.Name = "pregnancyCheckBox";
             this.pregnancyCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pregnancyCheckBox.Size = new System.Drawing.Size(199, 25);
+            this.pregnancyCheckBox.Size = new System.Drawing.Size(171, 20);
             this.pregnancyCheckBox.TabIndex = 11;
             this.pregnancyCheckBox.Text = "حمل";
             this.pregnancyCheckBox.UseVisualStyleBackColor = true;
@@ -495,11 +497,11 @@
             // noteTextBox
             // 
             this.noteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pateintBindingSource, "note", true));
-            this.noteTextBox.Location = new System.Drawing.Point(37, 372);
+            this.noteTextBox.Location = new System.Drawing.Point(32, 302);
             this.noteTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.noteTextBox.Multiline = true;
             this.noteTextBox.Name = "noteTextBox";
-            this.noteTextBox.Size = new System.Drawing.Size(200, 125);
+            this.noteTextBox.Size = new System.Drawing.Size(172, 102);
             this.noteTextBox.TabIndex = 13;
             // 
             // panelEx3
@@ -508,10 +510,10 @@
             this.panelEx3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx3.Controls.Add(this.dataGridViewX1);
             this.panelEx3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx3.Location = new System.Drawing.Point(0, 65);
+            this.panelEx3.Location = new System.Drawing.Point(0, 53);
             this.panelEx3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx3.Name = "panelEx3";
-            this.panelEx3.Size = new System.Drawing.Size(1001, 597);
+            this.panelEx3.Size = new System.Drawing.Size(858, 485);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -545,7 +547,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewX1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewX1.Name = "dataGridViewX1";
@@ -553,7 +555,7 @@
             this.dataGridViewX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridViewX1.RowTemplate.Height = 26;
             this.dataGridViewX1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewX1.Size = new System.Drawing.Size(1001, 597);
+            this.dataGridViewX1.Size = new System.Drawing.Size(858, 485);
             this.dataGridViewX1.TabIndex = 0;
             // 
             // pateintTableAdapter
@@ -571,6 +573,7 @@
             this.tableAdapterManager.BloodTypemetaTableAdapter = null;
             this.tableAdapterManager.ClinicInfoTableAdapter = null;
             this.tableAdapterManager.drugTableAdapter = null;
+            this.tableAdapterManager.financialTableAdapter = null;
             this.tableAdapterManager.GendermetaTableAdapter = this.gendermetaTableAdapter;
             this.tableAdapterManager.metaJobTableAdapter = null;
             this.tableAdapterManager.metaTableAdapter = null;
@@ -597,14 +600,14 @@
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "الرقم التسلسلي";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // p_identity
             // 
             this.p_identity.DataPropertyName = "p_identity";
-            this.p_identity.HeaderText = "p_identity";
+            this.p_identity.HeaderText = "رقم الهوية";
             this.p_identity.Name = "p_identity";
             this.p_identity.ReadOnly = true;
             // 
@@ -612,14 +615,14 @@
             // 
             this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dobDataGridViewTextBoxColumn
             // 
             this.dobDataGridViewTextBoxColumn.DataPropertyName = "dob";
-            this.dobDataGridViewTextBoxColumn.HeaderText = "dob";
+            this.dobDataGridViewTextBoxColumn.HeaderText = "تاريخ الميلاد";
             this.dobDataGridViewTextBoxColumn.Name = "dobDataGridViewTextBoxColumn";
             this.dobDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -630,7 +633,7 @@
             this.genderDataGridViewTextBoxColumn.DisplayMember = "name";
             this.genderDataGridViewTextBoxColumn.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.genderDataGridViewTextBoxColumn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "الجنس";
             this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
             this.genderDataGridViewTextBoxColumn.ReadOnly = true;
             this.genderDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -639,9 +642,9 @@
             // 
             // Pateint
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1354, 662);
+            this.ClientSize = new System.Drawing.Size(1161, 538);
             this.Controls.Add(this.panelEx3);
             this.Controls.Add(this.panelEx2);
             this.Controls.Add(this.panelEx1);
