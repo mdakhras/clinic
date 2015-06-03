@@ -22,6 +22,7 @@ namespace iClinic_.Pateint
             //int 
             clinic_DBDataSetTableAdapters.PateintTableAdapter adap = new clinic_DBDataSetTableAdapters.PateintTableAdapter();
              int? id =  adap.GetPatientIdbyIdentity(tb_idenitityval.Text);
+            
              if (id != null)
              {
                  pateintid = id.Value;

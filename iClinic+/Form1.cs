@@ -86,6 +86,14 @@ namespace iClinic_
             }
         }
 
+        private void btn_financial_Click(object sender, EventArgs e)
+        {
+            Financial.Frmfinancial frm = new Financial.Frmfinancial();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
        
     }
 }
