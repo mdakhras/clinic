@@ -94,6 +94,23 @@ namespace iClinic_
             frm.Show();
         }
 
+        private void btn_rclinicinfo_Click(object sender, EventArgs e)
+        {
+            Reports.clinic.Report_ClinicInfo frm = new Reports.clinic.Report_ClinicInfo();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+
+        }
+
+        private void btn_rdoctors_Click(object sender, EventArgs e)
+        {
+            Reports.doctors.Report_Doctors  frm = new Reports.doctors.Report_Doctors();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.Show();
+        }
+
        
     }
 }

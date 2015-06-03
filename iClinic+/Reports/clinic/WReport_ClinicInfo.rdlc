@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="name">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!name.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>name</rd:DefaultName>
+        <Top>0.66278in</Top>
+        <Left>1.06333in</Left>
+        <Height>0.25in</Height>
+        <Width>2.41667in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="drname">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!drname.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>drname</rd:DefaultName>
+        <Top>0.66278in</Top>
+        <Left>3.92167in</Left>
+        <Height>0.25in</Height>
+        <Width>2.45833in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="spec">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!spec.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>spec</rd:DefaultName>
+        <Top>0.98222in</Top>
+        <Left>3.92167in</Left>
+        <Height>0.25in</Height>
+        <Width>2.45833in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="address">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!address.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>address</rd:DefaultName>
+        <Top>0.98222in</Top>
+        <Left>1.06333in</Left>
+        <Height>0.25in</Height>
+        <Width>2.41667in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="tel">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!tel.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>tel</rd:DefaultName>
+        <Top>1.30167in</Top>
+        <Left>1.06333in</Left>
+        <Height>0.25in</Height>
+        <Width>2.41667in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="email">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!email.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>email</rd:DefaultName>
+        <Top>1.60722in</Top>
+        <Left>1.06333in</Left>
+        <Height>0.25in</Height>
+        <Width>2.41667in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="website">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!website.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>website</rd:DefaultName>
+        <Top>1.89889in</Top>
+        <Left>1.06333in</Left>
+        <Height>0.25in</Height>
+        <Width>2.41667in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="review_days">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!review_days.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>review_days</rd:DefaultName>
+        <Top>2.21833in</Top>
+        <Left>1.06333in</Left>
+        <Height>0.25in</Height>
+        <Width>2.41667in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="spec1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!spec.Value, "DataSet1")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>spec1</rd:DefaultName>
+        <Top>1.30167in</Top>
+        <Left>3.92167in</Left>
+        <Height>0.25in</Height>
+        <Width>2.45833in</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>معلومات العيادة</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>0.26889in</Top>
+        <Left>2.48in</Left>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>معلومات الطبيب</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>0.26889in</Top>
+        <Left>5.38in</Left>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>13.23481cm</Height>
+    <Style />
+  </Body>
+  <Width>20.04484cm</Width>
+  <Page>
+    <PageHeader>
+      <Height>2.94217cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Rectangle Name="Rectangle1">
+          <ReportItems>
+            <Textbox Name="name1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!name.Value, "DataSet1")</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>name1</rd:DefaultName>
+              <Top>0.36in</Top>
+              <Left>2.64584in</Left>
+              <Height>0.25in</Height>
+              <Width>2.28333in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <KeepTogether>true</KeepTogether>
+          <Top>0cm</Top>
+          <Left>0cm</Left>
+          <Height>2.87161cm</Height>
+          <Width>20.04484cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BackgroundColor>LightGrey</BackgroundColor>
+          </Style>
+        </Rectangle>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>1cm</LeftMargin>
+    <RightMargin>1cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>2.54cm</BottomMargin>
+    <ColumnSpacing>1.27cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="clinic_DBDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>ff92565d-2ea5-443c-b171-624e529e1da7</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>clinic_DBDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="drname">
+          <DataField>drname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="spec">
+          <DataField>spec</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="address">
+          <DataField>address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tel">
+          <DataField>tel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="email">
+          <DataField>email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="website">
+          <DataField>website</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="review_days">
+          <DataField>review_days</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="visit_cost">
+          <DataField>visit_cost</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="review_cost">
+          <DataField>review_cost</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>clinic_DBDataSet</rd:DataSetName>
+        <rd:SchemaPath>F:\Masirat3\Training\3-6-2015\clinic\iClinic+\clinic_DBDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>ClinicInfo</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>ClinicInfoTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="hbg">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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
+NgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAA
+AAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAA
+AAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAID/Y9eOBQAAAAAG+VsPY09xBAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAA
+AAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAA
+AAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAA
+AAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACARQIMAPEFMvgwuzmeAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="hbg1">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAACbAAAAJPCAYAAACnoWA+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAKCVJREFUeNrs3Y9nXdnawPH93lQIoYQQQgghhBAOl6G8zP9fyhBKKaWUuqWUMtS863mzlqzue87JSXJynvPj82HJzj4nTWd33Lmd+fZ5/ueff/4ZAAAAAAAAAAAAYNX+5REAAAAAAAAAAACQQcAGAAAAAAAAAABACgEbAAAAAAAAAAAAKQRsAAAAAAAAAAAApBCwAQAAAAAAAAAAkELABgAAAAAAAAAAQAoBGwAAAAAAAAAAACkEbAAAAAAAAAAAAKQQsAEAAAAAAAAAAJBCwAYAAAAAAAAAAEAKARsAAAAAAAAAAAApBGwAAAAAAAAAAACkELABAAAAAAAAAACQQsAGAAAAAAAAAABAile3t7eeAgAAAAAAAAAAACtnAhsAAAAAAAAAAAApBGwAAAAAAAAAAACkELABAAAAAAAAAACQ4pVHAAAAAAAAALBSJ+WcznjtQznfPSIAYFcI2AAAAAAAAGA3nZdz9Ij3H9WvWdReOTeP/DldlnO4pL++/XKu/TI/2V/l/L2i7xXB3odHvP99OT8WfO+P+v5FCQgBYMUEbAAAAAAAALC4CKL2Z7w2b6pWmDzi+xyUc7XEnxs85e/1VfpzA5/Rz3JuF3zvt3I+znhtXsA3L8B7zPcHgLUlYAMAAAAAAGAdPTS9a970sJjgdTnna+dN+XrslDFgd0VoOlnTn9uvct7Nef3tnNfe1a+fZtZkvoe+HwDMJGADAAAAAACgmRWFxSSwgxlfc1zO2ZwfMyK0vRmvxbSyE48dYOnif3fnxXWrCu9iQtzP0b1P5Xwd3Zs2hW5WFDftxwRggwnYAAAAAAAA1tesNZLTQrNlvBcAlmnaP2teIp77XM6X0b3nRnHTfkwAXoCADQAAAAAA4HFeKh6btxITAJjttJ6xP5f4
+PcZBXKxS/Wv0nvFq1nEY97Gcb365AH4nYAMAAAAAALbBdTn7o3umlAEAy/J6+O/pcX8888ccT3mLuO1j9/mPct53n0+bIBcR3d9+eYBNJmADAAAAAABWJQKz69G9cTh2WM7l6D2X9X5zVL8OAGCTzZoc9xwRvP3oPv9Uztfu8z54GwdzYjgghYANAAAAAAAYmxaI3ZSz131+Mvz3f3AdTyU5K+fY4wQAWJnLB/7/2aLmxW2PeQ3gQQI2AAAAAADYXONAbNrKy4vhbuVV87re613VrwUAgHA0/D4l96kh3FPDN9PgYIcI2AAAAAAA4OVFZHY25/MwnnAW081Ous/36nsAAGBTXC/hx4gVqJ/qdR+6fS/nw5TrWKH63qOHzSFgAwAAAACA6caTysZBWaxnOuw+7wO0aZPQAACAxzsenr6W/mc5t1OuY7rbX/X6VznvplwDKyJgAwAAAABgm0RQdtl9HsHZaff5+fD7KqSYCLFfr/eH5UyIAAAA1kP8wZJ+/embR3792xnXEbn9qtf9ulOrT+EJBGwAAAAAAGQbTyuLwOy8+zxWbfYTF67q1zQTjxAAAHgBk2f8vqNFbv3kt34daqxC/VavhW/sNAEbAAAAAABPEasyb7rPH1q3eVHf0/TrNgEAALZN//ulRSe/9atNI277WK8jevtar1sY972cDx4z20DABgAAAACwe/q1mX1oNl6/OW/dJgAAAMsVv996yoTpfppbW3XaB3ARukXwFuHbO4+ZdSNgAwAAAADYLPOCs0XDNAAAALbHeT1h0QCuTXX7Uc77eq+tMv1czpfRa/BiBGwAAAAAAKtzUM5V9/ms4Gze+wAAAOC5zuoJ/7vA++fFbePX4FEEbAAAAAAAi3tKcNa/DwAAADb198NhkQlvP8u5rdfjuK1/7bZ+zo4TsAEAAAAAu2JecHZV7z30PgAAAGC++L10C90WCd7mxW1f6uv9a2wZARsAAAAAsCluytmr14sGZ/37AAAA
+gPVzWk94s8D758Vt49fYAAI2AAAAAGBVDsu5rNd9aBarNtsqkgjUbrqvmXhsAAAAQOcxk9Jjfelf9Xoct/WvvS/nh0ebQ8AGAAAAADzGWTnH9bqffHYy3P9p6eP6vnBUzrnHBgAAACSIPzT3mHWmH8r5vsBHlkjABgAAAAC7J6agHdbrfsVmf31Rzut6HQHakccGAAAAbLmL+vGh2E3otkQCNgAAAADYTP30s/66n5DWh2d9kAYAAADA0z02dPtYzrc5H3eagA0AAAAA8uyVc1OvY/LZVb2O6WiX9bpfwdmv6QQAAABgvS0auj0UuG116CZgAwAAAIDni8lm7V9I9hPQZq3qjGhtz2MDAAAAYLj7w4txFg3dPpXzdc7HjSJgAwAAAIDftbisn4LWr+hsUVo/PQ0AAAAAXtqioVsL2W7L+VHOu+FulWmsNP1Szud1+osSsAEAAACwrfpJaNfl7A+/r+k8ru8JMT3ttUcGAAAAwBY4q2de6BYxW0RtEbdF5BaxW5vittJJbgI2AAAAANZdv56zn4TWVnL2k9COhrs/hQoAAAAAzNb+fdu8yG3aBLeY3vZluA/gnk3ABgAAAMAqtfWc/SS0CNJO63U/CW3icQEAAABAmvbv7/495z3zJrjFa78e+iYCNgAAAACeol/P2SahxYrO63qvn4R2Xj8HAAAAALZL24zwZsbr38r5ONxNbIuo7a/hboLb53r9t4ANAAAAYLcdlnNZr/tJaJf1tdAmofWrPAEAAAAAHnJUz6xtCz8EbAAAAADbpf2LoD5Ga2s7p90DAAAAAMhyKGADAAAAWF9tTWeEZm0UfwRoJ/V6MuUeAAAAAMDGELABAAAArMZBOVf1+ny4G5u/X851vTctVgMAAAAA2GoCNgAAAICnuSjndTmH5VyO7k2L1QAAAAAAGBGwAQAAANxFZxf1OmK0wxn3+lgNAAAAAIBnErABAAAA2yjWcsZ6zph8dj7nXkxJO/C4AAAAAABy
+CNgAAACAdXdSzmm9vilnr5zjcs7m3AMAAAAAYAMI2AAAAIBVi8gsYrOYfHZV77UVnf10tBamAQAAAACwpQRsAAAAwHNFcBbhWQRol/VeW83ZT0WbeFQAAAAAAPQEbAAAAMBYi85i+tlNvXdRzuvh9wlpgjQAAAAAAJ5FwAYAAADbb7+c63rdJqOdlHM6eq2t8QQAAAAAgJUQsAEAAMBmams7p01Ea9PS+vWdAAAAAACwdgRsAAAAsB5iKtpVvY6JaDEZLSakxaS0mIp2WV+LlZ57HhcAAAAAANtAwAYAAAAvZzwJLcKzm/paW9fZVnkCAAAAAMDOEbABAADA47TpaC1Oa1PSXtd7YeIxAQAAAADAwwRsAAAAcLe6M1Z4npdzNNxPRWurO/vJaQAAAAAAwJII2AAAANhWbUVnrO48Hu7XeEaodlXfY1IaAAAAAAAkErABAACwScZrO2NaWkxNi5We1/U9MSltz6MCAAAAAID1J2ADAAAg23htZwRqEar1azsjTtv3qAAAAAAAYLsI2AAAAHgJ47Wdscrzsr7W1nbGGs8DjwoAAAAAAHaXgA0AAIBFjdd2Rnx2VV9razsjUjv0qAAAAAAAgEUI2AAAAHbbeG1nrOm8rq+1tZ0X9XUAAAAAAIClErABAABsp7aes01EaxFaTE6LCWptxScAAAAAAEAaARsAAMDmaNPRYlXnTb03qR/bCs82NQ0AAAAAAGDtCdgAAADyxUS0mIzW1ni2jzE5LSaoxSS1K48JAAAAAADYNgI2AACAlzNe13lazkk9p/XemccEAAAAAADsKgEbAADA443XdcZ0tJiSFtPSYmpam6IGAAAAAADAHAI2AACAO+N1nRGmRaAWodpNfc/EYwIAAAAAAFgeARsAALDtZq3tjNWeseIzJqVdeEwAAAAAAACrJ2ADAAA21ay1nRGlRZwWkdqxxwQAAAAAALC+BGwAAMC6aZPS2uS0FqK1MK0FawAAAAAAAGw4ARsA
+ALAq++VcD3fxWURobXVnW+XZVnsCAAAAAACwIwRsAADAMrR1nhGoRah2U85eOZP68cYjAgAAAAAAYEzABgAAzDNrnWdMTosJatZ5AgAAAAAA8GQCNgAA2E0xLS2mplnnCQAAAAAAQBoBGwAAbB/rPAEAAAAAANgIAjYAANgc43WeMSktJqZZ5wkAAAAAAMBGErABAEA+6zwBAAAAAADYSQI2AAB4WS1Ca1PT2rS0WO8Z4Zp1ngAAAAAAAOwsARsAADxdW+nZVnnGFLWI0ibD/VQ1AAAAAAAAYAYBGwAATBcrO2N1Z6z0jNWeMSktorSYnNZWfAIAAAAAAADPIGADAGAXTYvSDuv9iNbOPCIAAAAAAAB4eQI2AAC2TcRoEaVFnDaO0tpUNQAAAAAAAGANCNgAANgkk+EuTrsq56ic83JOyzkZ7lZ6vvaIAAAAAAAAYHMI2AAAWAf7w93ktAjQIkSLIC3CtAjUIlSLYO3AYwIAAAAAAIDtImADAOClzVrjeVlfi1Wfex4TAAAAAAAA7B4BGwAAzxHhWQRobZ1ni9NimtpBfQ0AAAAAAABgKgEbAADztBWebb1nrPJs6z3bBDUAAAAAAACAJxGwAQDsrpiQNg7SIlLrJ6oBAAAAAAAAvBgBGwDA9poWpLWJanFvzyMCAAAAAAAAMgnYAAA207QgLWK1iNbaRDUAAAAAAACAtSZgAwBYT32QFjHayfD7RDUAAAAAAACAjSdgAwBYvRakXZVzOExf8QkAAAAAAACw9QRsAADLtV/OdTnH5ZwN01d8AgAAAAAAADAI2AAAHqtNT5u24jMmqh14RAAAAAAAAACLEbABAPyuTUybDPdT1C7r9ZXHAwAAAAAAALA8AjYAYNdcDPcrPWNqWkxPu673rPcEAAAAAAAAWCEBGwCwbfppaf26zwjULjweAAAAAAAAgPUhYAMANk2EaRGoRag2bd0nAAAAAAAAABtCwAYArJt+Wtq0dZ8AAAAAAAAA
+bAkBGwCwajEtLaK0mJ42bd0nAAAAAAAAADtCwAYALNPe8Pu0tH7d51m9BgAAAAAAAID/J2ADAB5jv5zr4X5a2njd52uPCAAAAAAAAIBFRcD2n3I+lPOunPflfKyf/+XxAMDOaWFaTE47qh/bNLWYonboEQEAAAAAAACwLBGwxX+c/nc9YxG0fajntp64/uLRAcBGiolpMSWtX+l5Xe9deTwAAAAAAAAArNJDK0Qv6xn7OdzFbDGlLYK2mNrWYrfvHisApIgo/byeuJ4Md2HaRXcPAAAAAAAAANbGqyd+3cFw9x/FJ1Nea3Hbp+FuUlusJv3cXf/y2AHgSSIqjwgtJqbF5LSYoHZR7914PAAAAAAAAABsmlcv8GPOi9vC1+EubovILaK2mNr2vt6/9UsCwI66qv8M7T/G9LSI1U7KOfWIAAAAAAAAANg2rxK+53E9swK3WEcaYVusJ22T29pq0gjcfvplA2CDxIS0193HmKJ2OOUjAAAAAAAAAOycV2v4czqv548573k73K8q/TbcR2+f6/U3v7QAvLBY33lc/5l1NOVjC9YAAAAAAAAAgBlebejPu01vezPnPW1aW8Rufw93E91iiltMc2uxGwCMtXWdp911/7GFawAAAAAAAADAM73a4r+2q/pxMuc9n8r5Ws77cn6U8264i93e1dfb6lIANltb0xnhWQRoe+Xc1NfaxLQWqQEAAAAAAAAAK/Jqx//6z+qZPPC+iNwidmuT3EKb8BaT3GKiWwRw7/0tBbASLTqLFZ0X9d51OfvD/aS0g+E+ZgYAAAAAAAAA1tArj2Ahx8P9urg/Fnh/THD7Vc7Hcr7V87Hea9Pd2tQ3AO6jswjQruu98dS0MPGoAAAAAAAAAGB7CNheRltLt0hoEdPbYopbTHO7rfdiyltMe2srTvvXANZZH5v1KzlboDa+blPTAAAAAAAAAIAdJGDLdzLchxxvFnj/93I+1Ou22nQY7mO3ob7+vV63GA5gUf1a
+zv46VnaeT7nuozUAAAAAAAAAgIUJ2DZPxCRPXaH3tn4cT3Tr15m2daeNAA42z0X934rmqpyDen1QPw+xnvNyyjUAAAAAAAAAwEoI2HZLH769ecLXt3Wnzdvuup8AFyKQ+znna4F7e8P96uHQR2ahn4IW+tWcIaafHXuMAAAAAAAAAMCmEbDxGP260zB5xo/1q5x3o3sx+e1b93m/LrWZNhFuPFEOXuLv/dMp9yM623vie6d9LQAAAAAAAADAThGwkSXCnXEAN1ny94i1qO+n3J8WxoXx+tSxtw98v5hA98kv7VKMV2BOM55KNst1OftT7kdkdjLl/sTjBwAAAAAAAABYDQEb2+xwmB0j/bkGP7+YQPdrBd9nPNlumllTw5YtQrJrf2sCAAAAAAAAABAEbJDnZkXfx0QxAAAAAAAAAADW0r88AgAAAAAAAAAAADII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAA
+IIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQC
+NgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAA
+AAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAA
+AAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAAAAAAAAUgjYAAAAAAAAAAAASCFgAwAAAAAAAAAAIIWADQAAAAAAAAAAgBQCNgAAAAAAAAAAAFII2AAAAAAAAAAAAEghYAMAAAAAAAAAACCFgA0AAAAAAAAAAIAUAjYAAAAAAAAAAABSCNgAAAAAAAAAAABIIWADAAAAAAAAAAAghYANAAAAAAAAAACAFAI2AAAAAID/Y9eOBQAAAAAG+VsPY09xBAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAA
+AAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAA
+AAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAA
+AAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACAhcAGAAAAAAAAAADAQmADAAAAAAAAAABgIbABAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALgQ0AAAAAAAAAAICFwAYAAAAAAAAAAMBCYAMAAAAAAAAAAGAhsAEAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAACwENgAAAAAAAAAAABYCGwAAAAAAAAAAAAuBDQAAAAAAAAAAgIXABgAAAAAAAAAAwEJgAwAAAAAAAAAAYCGwAQAAAAAAAAAAsBDYAAAAAAAAAAAAWAhsAAAAAAAAAAAALAQ2AAAAAAAAAAAAFgIbAAAAAAAAAAAAC4ENAAAAAAAAAACARQIMAPEFMvgwuzmeAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>685adcf1-c938-4531-90f4-c289a75db122</rd:ReportID>
+</Report>

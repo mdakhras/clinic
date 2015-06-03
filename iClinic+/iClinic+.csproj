@@ -48,23 +48,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Design">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.DotNetBar.Design.dll</HintPath>
+      <HintPath>..\..\..\..\Libraries\DotNetToolKit\DevComponents.DotNetBar.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>..\..\..\..\Libraries\DotNetToolKit\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.Instrumentation.dll</HintPath>
+      <HintPath>..\..\..\..\Libraries\DotNetToolKit\DevComponents.Instrumentation.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.Instrumentation.Design">
-      <HintPath>..\..\..\Users\navy__000\Desktop\Traning C#\new style Refrences\DevComponents.Instrumentation.Design.dll</HintPath>
+      <HintPath>..\..\..\..\Libraries\DotNetToolKit\DevComponents.Instrumentation.Design.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.TreeGX">
       <HintPath>..\..\..\..\DotNetToolKit\DevComponents.TreeGX.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -188,6 +191,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\clinic\Report_ClinicInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\clinic\Report_ClinicInfo.Designer.cs">
+      <DependentUpon>Report_ClinicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\doctors\Report_Doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\doctors\Report_Doctors.Designer.cs">
+      <DependentUpon>Report_Doctors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visits\Dlg_NewVisit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +268,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\clinic\Report_ClinicInfo.resx">
+      <DependentUpon>Report_ClinicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\clinic\WReport_ClinicInfo.rdlc" />
+    <EmbeddedResource Include="Reports\doctors\Report_Doctors.resx">
+      <DependentUpon>Report_Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\doctors\WReports_Doctors.rdlc" />
     <EmbeddedResource Include="Visits\Dlg_NewVisit.resx">
       <DependentUpon>Dlg_NewVisit.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,6 +353,9 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\pateint\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
