@@ -61,5 +61,20 @@ namespace iClinic_.Drugs
         {
 
         }
+
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("هل تريد حفظ التعديلات ", "تنبيه", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.drugBindingSource.EndEdit();
+                this.drugTableAdapter.Update(clinic_DBDataSet.drug);
+            }
+        }
     }
 }

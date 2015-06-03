@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label nameLabel;
             System.Windows.Forms.Label notesLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_DeletDrug = new DevComponents.DotNetBar.ButtonX();
@@ -45,11 +45,12 @@
             this.notesTextBox = new System.Windows.Forms.TextBox();
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.drugTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.drugTableAdapter();
+            this.tableAdapterManager = new iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.drugTableAdapter = new iClinic_.clinic_DBDataSetTableAdapters.drugTableAdapter();
-            this.tableAdapterManager = new iClinic_.clinic_DBDataSetTableAdapters.TableAdapterManager();
+            this.btn_update = new DevComponents.DotNetBar.ButtonX();
             nameLabel = new System.Windows.Forms.Label();
             notesLabel = new System.Windows.Forms.Label();
             this.panelEx1.SuspendLayout();
@@ -64,7 +65,7 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(193, 123);
+            nameLabel.Location = new System.Drawing.Point(188, 36);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(53, 13);
             nameLabel.TabIndex = 0;
@@ -73,7 +74,7 @@
             // notesLabel
             // 
             notesLabel.AutoSize = true;
-            notesLabel.Location = new System.Drawing.Point(201, 149);
+            notesLabel.Location = new System.Drawing.Point(196, 62);
             notesLabel.Name = "notesLabel";
             notesLabel.Size = new System.Drawing.Size(45, 13);
             notesLabel.TabIndex = 2;
@@ -137,6 +138,7 @@
             // 
             this.tx_Drugname.Location = new System.Drawing.Point(196, 22);
             this.tx_Drugname.Name = "tx_Drugname";
+            this.tx_Drugname.ReadOnly = true;
             this.tx_Drugname.Size = new System.Drawing.Size(182, 20);
             this.tx_Drugname.TabIndex = 1;
             // 
@@ -153,6 +155,7 @@
             // 
             this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.Controls.Add(this.btn_update);
             this.panelEx2.Controls.Add(nameLabel);
             this.panelEx2.Controls.Add(this.nameTextBox);
             this.panelEx2.Controls.Add(notesLabel);
@@ -173,10 +176,12 @@
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.drugBindingSource, "name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(11, 122);
+            this.nameTextBox.Location = new System.Drawing.Point(6, 35);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(176, 20);
             this.nameTextBox.TabIndex = 1;
+            this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // drugBindingSource
             // 
@@ -191,11 +196,12 @@
             // notesTextBox
             // 
             this.notesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.drugBindingSource, "notes", true));
-            this.notesTextBox.Location = new System.Drawing.Point(11, 148);
+            this.notesTextBox.Location = new System.Drawing.Point(6, 61);
             this.notesTextBox.Multiline = true;
             this.notesTextBox.Name = "notesTextBox";
             this.notesTextBox.Size = new System.Drawing.Size(176, 68);
             this.notesTextBox.TabIndex = 3;
+            this.notesTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panelEx3
             // 
@@ -226,14 +232,14 @@
             this.nameDataGridViewTextBoxColumn,
             this.notesDataGridViewTextBoxColumn});
             this.dataGridViewX1.DataSource = this.drugBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(0, 0);
@@ -243,38 +249,18 @@
             this.dataGridViewX1.TabIndex = 0;
             this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // notesDataGridViewTextBoxColumn
-            // 
-            this.notesDataGridViewTextBoxColumn.DataPropertyName = "notes";
-            this.notesDataGridViewTextBoxColumn.HeaderText = "notes";
-            this.notesDataGridViewTextBoxColumn.Name = "notesDataGridViewTextBoxColumn";
-            this.notesDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // drugTableAdapter
             // 
             this.drugTableAdapter.ClearBeforeFill = true;
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.AppointmentTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.BloodTypemetaTableAdapter = null;
             this.tableAdapterManager.ClinicInfoTableAdapter = null;
             this.tableAdapterManager.drugTableAdapter = this.drugTableAdapter;
+            this.tableAdapterManager.financialTableAdapter = null;
             this.tableAdapterManager.GendermetaTableAdapter = null;
             this.tableAdapterManager.metaJobTableAdapter = null;
             this.tableAdapterManager.metaTableAdapter = null;
@@ -285,6 +271,40 @@
             this.tableAdapterManager.userTableAdapter = null;
             this.tableAdapterManager.VisitTableAdapter = null;
             this.tableAdapterManager.VisitTypemetaTableAdapter = null;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "الرقم";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "الاسم";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // notesDataGridViewTextBoxColumn
+            // 
+            this.notesDataGridViewTextBoxColumn.DataPropertyName = "notes";
+            this.notesDataGridViewTextBoxColumn.HeaderText = "ملاحظات";
+            this.notesDataGridViewTextBoxColumn.Name = "notesDataGridViewTextBoxColumn";
+            this.notesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // btn_update
+            // 
+            this.btn_update.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btn_update.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btn_update.Location = new System.Drawing.Point(62, 145);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(75, 23);
+            this.btn_update.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btn_update.TabIndex = 4;
+            this.btn_update.Text = "تعديل";
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // Drug
             // 
@@ -332,5 +352,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn notesDataGridViewTextBoxColumn;
+        private DevComponents.DotNetBar.ButtonX btn_update;
     }
 }

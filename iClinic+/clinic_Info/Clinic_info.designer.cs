@@ -62,7 +62,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(86, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 13);
+            this.label7.Size = new System.Drawing.Size(130, 13);
             this.label7.TabIndex = 0;
             this.label7.Text = "يرجي ادخال بيانات العيادة ";
             // 
@@ -97,6 +97,7 @@
             this.textBox_website.Name = "textBox_website";
             this.textBox_website.Size = new System.Drawing.Size(164, 20);
             this.textBox_website.TabIndex = 18;
+            this.textBox_website.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // clinicInfoBindingSource
             // 
@@ -115,6 +116,7 @@
             this.textBox_email.Name = "textBox_email";
             this.textBox_email.Size = new System.Drawing.Size(164, 20);
             this.textBox_email.TabIndex = 17;
+            this.textBox_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_tel
             // 
@@ -123,6 +125,7 @@
             this.textBox_tel.Name = "textBox_tel";
             this.textBox_tel.Size = new System.Drawing.Size(164, 20);
             this.textBox_tel.TabIndex = 16;
+            this.textBox_tel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox_address
             // 
@@ -131,6 +134,7 @@
             this.textBox_address.Name = "textBox_address";
             this.textBox_address.Size = new System.Drawing.Size(164, 20);
             this.textBox_address.TabIndex = 15;
+            this.textBox_address.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox_spec
             // 
@@ -139,6 +143,7 @@
             this.textBox_spec.Name = "textBox_spec";
             this.textBox_spec.Size = new System.Drawing.Size(164, 20);
             this.textBox_spec.TabIndex = 14;
+            this.textBox_spec.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox_name
             // 
@@ -147,13 +152,14 @@
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(164, 20);
             this.textBox_name.TabIndex = 13;
+            this.textBox_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(207, 191);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 13);
+            this.label6.Size = new System.Drawing.Size(88, 13);
             this.label6.TabIndex = 7;
             this.label6.Text = "الموقع الاكتروني ";
             // 
@@ -162,7 +168,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(208, 158);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 13);
+            this.label5.Size = new System.Drawing.Size(85, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "البريد الالكتروني ";
             // 
@@ -171,7 +177,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(233, 125);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "رقم التلفون";
             // 
@@ -180,7 +186,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(256, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "العنوان";
             // 
@@ -189,7 +195,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(245, 59);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 11;
             this.label2.Text = "التخصص ";
             // 
@@ -198,7 +204,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(233, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 12;
             this.label1.Text = "اسم العيادة";
             // 
